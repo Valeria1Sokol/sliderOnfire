@@ -1057,10 +1057,15 @@ button {
     background-image: url("../dashboard-master/app/assets/images/bg/habits-bg.png");
     height: 35vh;
 }
-@media all and (max-width:1024px)
-{
-    .progress-bar
-    {
+
+@media all and (max-width:1024px) {}
+
+@media all and (max-width:1200px) {
+    .habits-page .time-boxes {
+        overflow-x: scroll;
+    }
+
+    .progress-bar {
         margin: 0 auto 0 7vw;
         width: 85%;
     }
