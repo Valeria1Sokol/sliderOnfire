@@ -377,11 +377,7 @@ body {
 .task__block {
     margin-bottom: 85px;
 }
-.src
-{
-    overflow: scroll;
-    height: 100vh;
-}
+
 
 .float__menu {
 /*    position: absolute;*/

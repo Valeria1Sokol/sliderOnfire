@@ -57,11 +57,13 @@ var rightMenu = document.getElementById("right__hightlight");
 var menuArrow = document.getElementById("open__menu");
 menuArrow.addEventListener('click', function (e) {
     if (window.innerWidth >= 1366) {
+        menuArrow.style.visibility = 'hidden';
         menuArrow.style.opacity = 0;
         rightMenu.style.right = "0px";
         rightMenu.style.visibility = 'visible';
     } else {
         menuArrow.style.opacity = 0;
+        menuArrow.style.visibility = 'hidden';
         rightMenu.style.right = "0px";
         rightMenu.style.visibility = 'visible';
     }
@@ -84,10 +86,12 @@ window.addEventListener('load', function () {
                 touchsurface.style.right = "-550px";
                 rightMenu.style.visibility = 'hidden';
                 menuArrow.style.opacity = 1;
+                menuArrow.style.visibility = 'visible';
             } else {
                 touchsurface.style.right = "-100%";
                 rightMenu.style.visibility = 'hidden';
                 menuArrow.style.opacity = 1;
+                menuArrow.style.visibility = 'visible';
             }
 
         }
@@ -119,10 +123,12 @@ function displayWindowSize() {
         touchsurface.style.right = "-550px";
         rightMenu.style.visibility = 'hidden';
         menuArrow.style.opacity = 1;
+        menuArrow.style.visibility = 'visible';
     } else {
         touchsurface.style.right = "-100%";
         rightMenu.style.visibility = 'hidden';
         menuArrow.style.opacity = 1;
+        menuArrow.style.visibility = 'visible';
     }
 }
 window.addEventListener("resize", displayWindowSize);
