@@ -1576,9 +1576,8 @@
     <script>
         $(document).ready(function() {
 
-            if (window.innerWidth > 1366) {
                 $('#fullpage').fullpage({
-                    dragAndMove: false,
+//                    dragAndMove: false,
 
                     //                                loopBottom: true,
                     //                                afterRender: function() {
@@ -1586,28 +1585,12 @@
                     //                                $.fn.fullpage.moveSlideRight();
                     //                                }, 5000);
                     //                                },
-                    scrollOverflow: false,
+//                    scrollOverflow: false,
                     slidesNavigation: true,
                     autoScrolling: true,
                     controlArrows: false,
                 });
-            } else {
-                $('#fullpage').fullpage({
-                    dragAndMove: false,
-
-                    //                                loopBottom: true,
-                    //                                afterRender: function() {
-                    //                                setInterval(function() {
-                    //                                $.fn.fullpage.moveSlideRight();
-                    //                                }, 5000);
-                    //                                },
-                    scrollOverflow: true,
-                    slidesNavigation: true,
-                    autoScrolling: true,
-                    controlArrows: false,
-                });
-            }
-
+            
         });
 
     </script>
