@@ -1,0 +1,54 @@
+.dates {
+    // .dates__item
+    display: flex;
+    align-items: center;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        &:not(:last-child){
+            margin-right: 16px ;
+        }
+    }
+    // .dates__circle
+    &__circle {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #164A4A;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        // .dates__circle_active
+        &_active {
+            background: #00A662;
+            transform: matrix(1, 0, 0, -1, 0, 0);
+        }
+    }
+
+    // .dates__title
+    &__title {
+        font-size: 15px;
+        line-height: 35px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) { 
+    .dates {
+        // .dates__item
+        &__item {
+            &:not(:last-child){
+                margin-right: 32px ;
+            }
+        }
+        // .dates__circle
+        &__circle {
+            width: 32px;
+            height: 32px;
+        }
+        // .dates__title
+        &__title {
+            font-size: 30px;
+            line-height: 70px;
+        }
+    }
+
+}

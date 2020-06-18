@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url("../font/BebasNeue/BebasNeue-Regular.ttf");
+}
+@font-face {
+    font-family: 'BebasNeue-Thin';
+    src: url("../font/BebasNeue/BebasNeue-Thin.ttf");
+}
+@font-face {
+    font-family: 'BebasNeue-Book';
+    src: url("../font/BebasNeue/BebasNeue-Book.ttf");
+}
+@font-face {
+    font-family: 'BebasNeue-Bold';
+    src: url("../font/BebasNeue/BebasNeue-Bold.ttf");
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url("../font/Quicksand/Quicksand-VariableFont_wght.ttf");
+}
+

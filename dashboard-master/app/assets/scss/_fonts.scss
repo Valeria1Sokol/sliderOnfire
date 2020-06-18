@@ -1,0 +1,134 @@
+// Bebas Neue
+// @font-face {
+//     font-family: 'Bebas Neue';
+//     src: url('../fonts/BebasNeue/BebasNeue/BebasNeueBold.otf') format('OpenType');
+//     src: local('BebasNeueBold'), local('BebasNeueBold');
+//     font-weight: bold;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'Bebas Neue';
+//     src: url('../fonts/BebasNeue/BebasNeue/BebasNeueLight.otf') format('OpenType');
+//     src: local('BebasNeueLight'), local('BebasNeueLight');
+//     font-weight: 300;
+//     font-style: normal;
+// }
+
+
+// @font-face {
+//     font-family: 'Bebas Neue';
+//     src: url('../fonts/BebasNeue/BebasNeue/BebasNeueThin.ttf') format('truetype');
+//     src: local('BebasNeueThin'), local('BebasNeueThin');
+//     font-weight: 100;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'Bebas Neue';
+//     src: url('../fonts/BebasNeue/BebasNeue/BebasNeue.otf') format('OpenType');
+//     src: local('BebasNeue'), local('BebasNeue');
+//     font-weight: bold;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'Bebas Neue';
+//     src: url('../fonts/BebasNeue/BebasNeue/BebasNeueRegular.otf') format('OpenType');
+//     src: local('BebasNeueRegular'), local('BebasNeueRegular');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+
+// @font-face {
+//     font-family: 'Bebas Neue';
+//     src: url('../fonts/BebasNeue/BebasNeue/BebasNeueBook.otf') format('OpenType');
+//     src: local('BebasNeueBook'), local('BebasNeueBook');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Thin'), local('BebasNeue-Thin'), url('../fonts/BebasNeue/bebasneuethin.woff2') format('woff2'), url('../fonts/BebasNeue/bebasneuethin.woff') format('woff'), url('../fonts/BebasNeue/bebasneuethin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Light'), local('BebasNeue-Light'), url('../fonts/BebasNeue/bebasneuelight.woff2') format('woff2'), url('../fonts/BebasNeue/bebasneuelight.woff') format('woff'), url('../fonts/BebasNeue/bebasneuelight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Book'), local('BebasNeueBook'), url('../fonts/BebasNeue/bebasneuebook.woff2') format('woff2'), url('../fonts/BebasNeue/bebasneuebook.woff') format('woff'), url('../fonts/BebasNeue/bebasneuebook.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('../fonts/BebasNeue/bebasneueregular.woff2') format('woff2'), url('../fonts/BebasNeue/bebasneueregular.woff') format('woff'), url('../fonts/BebasNeue/bebasneueregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('../fonts/BebasNeue/bebasneuebold.woff2') format('woff2'), url('../fonts/BebasNeue/bebasneuebold.woff') format('woff'), url('../fonts/BebasNeue/bebasneuebold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+// Quicksand
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/BebasNeue/Quicksand/QuicksandBold.otf') format('OpenType');
+    src: local('QuicksandBold'), local('QuicksandBold');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/BebasNeue/Quicksand/QuicksandBoldItalic.otf') format('OpenType');
+    src: local('QuicksandBoldItalic'), local('QuicksandBoldItalic');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/BebasNeue/Quicksand/QuicksandItalic.otf') format('OpenType');
+    src: local('QuicksandItalic'), local('QuicksandItalic');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/BebasNeue/Quicksand/QuicksandLight.otf') format('OpenType');
+    src: local('QuicksandLight'), local('QuicksandLight');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/BebasNeue/Quicksand/QuicksandLightItalic.otf') format('OpenType');
+    src: local('QuicksandLightItalic'), local('QuicksandLightItalic');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/BebasNeue/Quicksand/QuicksandRegular.otf') format('OpenType');
+    src: local('QuicksandRegular'), local('QuicksandRegular');
+    font-weight: normal;
+    font-style: normal;
+}

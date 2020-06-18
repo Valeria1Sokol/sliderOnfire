@@ -1,0 +1,80 @@
+// Progress bar
+.progress-bar {
+    &__numbers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 9px;
+    }
+
+    &__percent, &__stages {
+        font-size: 25px;
+        line-height: 30px;
+        display: inline-block;
+    }
+
+    &__title {
+        display: inline-block;
+        opacity: .5;
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 5px;
+    }
+
+    &__line {
+        background: #258477;
+        border-radius: 63px;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        width: 100%;
+        height: 3px;
+        position: relative;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 48%;
+            height: 3px;
+            background: #00FF19;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 63px;
+            transform: matrix(1, 0, 0, -1, 0, 0);
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) { 
+
+// Progress bar
+.progress-bar {
+    &__numbers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 18px;
+    }
+
+    &__percent, &__stages {
+        font-size: 50px;
+        line-height: 60px;
+        display: inline-block;
+    }
+
+    &__title {
+        font-size: 50px;
+        line-height: 60px;
+        margin-top: 10px;
+    }
+
+    &__line {
+        width: 100%;
+        height: 7px;
+        position: relative;
+        &::after {
+            width: 48%;
+            height: 7px;
+        }
+    }
+}
+
+
+}

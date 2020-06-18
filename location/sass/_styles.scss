@@ -1,0 +1,356 @@
+
+
+.map_wrapper{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: all 800ms;
+  left: 0;
+  &.open{
+   left: -20%;
+  }
+  #map{
+    width: 100%;
+    height: 100%;
+  }
+}
+.mapboxgl-popup{
+  &.popup_text{
+    margin-top: 17px;
+    .mapboxgl-popup-close-button{
+      display: none;
+    }
+    .mapboxgl-popup-tip{
+      border: 17px solid transparent;
+      border-top-color: #091637;
+
+    }
+    .mapboxgl-popup-content{
+      width: 219px;
+      height: 60px;
+      background: #091637;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      border-radius: 10px;
+      span{
+        font-family: 'Bebas Neue', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 1;
+        letter-spacing: 0.05em;
+        color: #fff;
+        position: relative;
+        top: 5px;
+
+      }
+    }
+  }
+}
+
+.activator_menu{
+  position: fixed;
+  width: 35px;
+  height: 329px;
+  background: #091637;
+  box-shadow: -20px -20px 20px rgba(112, 112, 112, 0.5);
+  border-radius: 36px;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.menu_location_wrap{
+  position: fixed;
+  right: -30%;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  //width: 697px;
+  width: 25.4105%;
+  min-width: 320px;
+  background: #091637;
+  box-shadow: -20px -20px 20px rgba(112, 112, 112, 0.5);
+  border-radius: 36px 0 0 0;
+  height: 100vh;
+  z-index: 9;
+  //padding: 0 30px;
+  transition: all 800ms;
+  &.open{
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.menu_location{
+  display: block;
+  height: 100%;
+  overflow-y: scroll;
+}
+.individual{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 30px;
+  padding-top: 51px;
+  padding-bottom: 30px;
+  .time{
+    font-family: 'BebasNeue Bold';
+    font-size: 80px;
+    color: #fff;
+    margin-right: 121px;
+    //margin-right: 21%;
+  }
+  .avatar{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    margin-right: 64px;
+    cursor: pointer;
+    img{
+      max-width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
+.location_info{
+  padding-top: 15px;
+  .city{
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 69px;
+    &:before{
+      content: "";
+      display: block;
+      width: 33px;
+      height: 44px;
+      background: url("../images/request_location_icon.png") no-repeat center center;
+      margin-right: 35px;
+      min-width: 33px;
+      position: relative;
+      top: -3px;
+    }
+  }
+}
+.weather_wrap{
+  display: block;
+  padding-top: 28px;
+  padding-bottom: 40px;
+  .weather_temt{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    .weather-icon{
+      font-size: 36px;
+      padding-left: 10px;
+    }
+    .weather-temperature{
+      font-family: 'BebasNeue Book';
+      font-size: 60px;
+      line-height: 70px;
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      left: -16px;
+      span{
+        font-weight: 300;
+        font-size: 70px;
+        font-family: 'Quicksand', sans-serif;
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        top: -7px;
+        padding-left: 3px;
+      }
+    }
+
+  }
+  .weather_wind{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .weather_wind_speed{
+      position: relative;
+      display: block;
+      left: -17px;
+      letter-spacing: 2px;
+    }
+    .icon_wind{
+      display: block;
+      width: 36px;
+      height: 36px;
+      background: url("../images/atmospheric.png") no-repeat center center;
+    }
+  }
+}
+
+.family_wrap{
+  padding-top: 82px;
+  &.mobile{
+    display: none;
+  }
+  .title{
+    font-size: 80px;
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    p{
+      position: relative;
+      margin-left: 30px;
+    }
+    .icon{
+      display: block;
+      position: relative;
+      left: 33px;
+      i{
+
+      }
+    }
+  }
+}
+.family_list{
+  padding-top: 83px;
+  //padding-left: 23px;
+  >li{
+    cursor: pointer;
+    display: flex;
+    padding-bottom: 75px;
+    padding-left: 53px;
+    background: transparent;
+    transition: background 300ms;
+    &.active{
+      background: #000;
+      .person_info{
+        .length{
+          display: block;
+        }
+      }
+      .avatar_wrap{
+        .charge{
+          display: block;
+        }
+      }
+    }
+    &:hover{
+      background: #000;
+    }
+    .avatar_wrap{
+      min-width: 130px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      .avatar{
+        position: relative;
+        margin-top: 35px;
+        img{
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          border: 3px solid #fff;
+        }
+      }
+
+      .charge{
+        width: 87px;
+        height: 70px;
+        display: none;
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+    .person_info{
+      width: 100%;
+      padding-left: 45px;
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      .name{
+        font-size: 70px;
+        line-height: 1;
+        padding-bottom: 5px;
+      }
+      .place{
+        font-size: 40px;
+        color: rgba(255,255,255, 0.5);
+        display: flex;
+        align-items: center;
+        line-height: 70px;
+        &.home{
+          &:before{
+            content: "";
+            width: 70px;
+            height: 70px;
+            display: inline-block;
+            background: url("../images/home.png") no-repeat center center / contain;
+            position: relative;
+            top: -10px;
+            margin-right: 22px;
+          }
+        }
+        &.school{
+          &:before{
+            content: "";
+            width: 70px;
+            height: 70px;
+            display: inline-block;
+            background: url("../images/school.png") no-repeat center center / contain;
+            position: relative;
+            top: -10px;
+            margin-right: 22px;
+          }
+
+        }
+      }
+      .distans{
+        font-size: 50px;
+        letter-spacing: -4px;
+        line-height: 1;
+        position: relative;
+        top: -3px;
+      }
+      .length{
+        font-size: 50px;
+        display:none;
+        letter-spacing: -3px;
+        line-height: 1;
+      }
+
+    }
+
+  }
+}
+.time_mobile{
+  display: none;
+}
+.pagination{
+  display: none;
+}

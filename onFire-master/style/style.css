@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*style of toDoList*/
+.container .header {
+    width: 100%;
+    background-image: url(../img/3452444%201.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.34vw 2.7vw 4.1vw;
+}
+
+.container .header .bottomHeader,
+.container .header .topHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header .topHeader .date {
+    text-align: center;
+    width: 100%;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.57vw;
+    line-height: 3.2vw;
+    color: #FFFFFF;
+    margin-top: 1.36vw;
+}
+
+.container .leftBox,
+.container .rightBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container .leftBox {
+    align-items: center;
+}
+
+.container .rightBox {
+    width: 57%;
+}
+
+.container .nav {
+    width: 2.2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 2.8vw 0 0;
+}
+
+.container .nav .burger {
+    width: 2.5vw;
+    height: 0.19vw;
+    background-color: white;
+    border-radius: 0.19vw;
+    margin: 0 0 0.7vw;
+}
+
+.container .nav .burger:last-of-type {
+    margin: 0;
+}
+
+.container .tittle {
+    font-family: 'BebasNeue-Thin';
+    font-size: 3.67vw;
+    line-height: 4.3vw;
+    color: #FFFFFF;
+}
+
+.rightBox .selectBox {
+    width: 13.34vw;
+    height: 2.2vw;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4vw;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.83vw;
+    line-height: 1.9vw;
+    text-align: center;
+    color: #091637;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 0.85vw;
+}
+
+.rightBox .selectBox .selectText {
+    margin: 0 2vw 0 0;
+}
+
+.rightBox .selectBox svg {
+    width: 1.4vw;
+}
+
+.rightBox .location {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.2vw;
+    line-height: 2.75vw;
+    color: #FFFFFF;
+    margin: 0.6vw 3vw 0 0;
+}
+
+.rightBox .weather {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightBox .weather .temp {
+    font-family: 'BebasNeue-Book';
+    font-size: 2.2vw;
+    line-height: 2.6vw;
+    color: #FFFFFF;
+    display: flex;
+    align-items: flex-start;
+}
+
+.rightBox .weather .temp span {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.47vw;
+    line-height: 1.7vw;
+    color: #FFFFFF;
+    margin: -0.5vw 0 0 0.2vw;
+}
+
+.rightBox .weather .atmos {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 1.36vw;
+    color: #FFFFFF;
+}
+
+.rightBox .weather .atmosImg {
+    width: 1.32vw;
+    height: 1.32vw;
+    margin: 0 0.4vw 0 0;
+}
+
+.rightBox .weather .atmosImg img {
+    max-width: 100%;
+}
+
+.rightBox .weather .tempImg {
+    width: 2.13vw;
+    height: 1.69vw;
+}
+
+.rightBox .weather .tempImg img {
+    max-width: 100%;
+}
+
+.rightBox .time {
+    font-family: 'BebasNeue-Bold';
+    font-size: 2.94vw;
+    line-height: 3.45vw;
+    color: #FFFFFF;
+}
+
+.rightBox .user {
+    width: 4.3vw;
+    height: 4.3vw;
+    border: 0.19vw solid #ffffff;
+    border-radius: 50%;
+    background-image: url(../img/dr%201.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rightBox .weatherBox {
+    width: 16.8vw;
+    height: 4.7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 4.55vw 0 0;
+}
+
+.rightBox .userBox {
+    display: flex;
+    flex-direction: row;
+    width: 12.4vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .content {
+    width: 100%;
+    background-color: #2D1639;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 2vw;
+}
+
+.container .content .grid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 2vw;
+}
+
+.grid .timeBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.9vw 0vw 2.42vw 1.47vw;
+    text-align: center;
+    width: 10vw;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 5vw;
+}
+
+.grid .timeBox .tittleTime {
+    font-family: 'BebasNeue-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.83vw;
+    line-height: 2.2vw;
+    color: #FFFFFF;
+}
+
+.grid .timeBox .lightTime {
+    opacity: 0.3;
+}
+
+.grid .timeBox .time {
+    font-family: 'BebasNeue-Book';
+    font-size: 1.83vw;
+    line-height: 2.2vw;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    color: #FFFFFF;
+    margin: 1.47vw 0 0;
+}
+
+.container .content .toDoList {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: auto;
+    margin: 0 1vw 0 0.3vw;
+}
+
+
+.container .content .toDoList .col {
+    display: flex;
+    flex-direction: column;
+    width: 21.4vw;
+    white-space: nowrap;
+    margin: 0 0 0 1vw;
+        height: fit-content;
+}
+
+.container .content .toDoList .user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 2.02vw;
+    width: 21.4vw;
+}
+
+.container .content .toDoList .user img {
+    width: 5.5vw;
+    height: 5.5vw;
+    margin: 0 1vw 0 0;
+}
+
+
+.container .content .toDoList p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.83vw;
+    line-height: 2.3vw;
+    color: #FFFFFF;
+    letter-spacing: -0.05em;
+    white-space: normal;
+}
+
+.container .content .toDoList .listTextLight {
+    opacity: 0.3;
+}
+
+.container .content .toDoList .list {
+    background: rgba(235, 235, 235, 0.2);
+    border-radius: 0.4vw;
+    padding: 0.52vw;
+}
+
+#user1 .allDayList {
+    margin: 0 0 6.6vw;
+}
+
+#user1 .list {
+    height: 6.5vw;
+    margin-top: 0.6vw;
+}
+
+#user1 .list:nth-child(2n) {
+    height: 5.5vw;
+}
+
+#user1 .list:last-of-type {
+    height: 15vw;
+    margin-top: 7.1vw;
+}
+
+#user2 .list {
+    height: 33.3vw;
+    margin-top: 6.96vw;
+    padding: 0;
+}
+
+#user2 .list .listTextLight {
+    padding: 0.52vw 1.1vw;
+}
+
+#user2 .list .list {
+    width: 100%;
+    height: 8.9vw;
+    margin-top: 9.38vw;
+}
+
+#user3 .list {
+    height: 18.65vw;
+    margin-top: 15vw;
+    padding: 0.8vw 1.1vw;
+}
+
+#user4 .allDayList {
+    margin: 0 0 3vw;
+}
+
+#user4 .list {
+    height: 6vw;
+    padding: 0.8vw 0.52vw;
+}
+
+#user4 .list:last-of-type {
+    height: 12.57vw;
+    margin-top: 1vw;
+}
+
+#user5 .list {
+    height: 14.6vw;
+    margin-top: 1vw;
+    padding: 0.8vw 1.1vw;
+}
+
+#user5 .list:nth-of-type(2n+1) {
+    height: 7.2vw;
+    margin-top: 1.7vw;
+}
+
+#user5 .list:last-of-type {
+    margin-top: 9.3vw;
+    height: 7.2vw;
+}
+
+.slideDot {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideDot .dot {
+    width: 1.18vw;
+    height: 1.18vw;
+    background: #646464;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    margin: 0 0.66vw 0 0;
+    border-radius: 50%;
+}
+
+.slideDot .dot:last-of-type {
+    margin: 0;
+}
+
+.slideDot .active {
+    background: #FFFFFF;
+}
+
+.Redline {
+    width: 100%;
+    height: 0.1vw;
+    position: absolute;
+    top: 1132px;
+    border-top: 3px solid #FF2222;
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+
+}
+
+.Redline .circle {
+    width: 1.2vw;
+    height: 1.2vw;
+    position: relative;
+    left: 7vw;
+    top: -0.6vw;
+    background: #C76177;
+    border: 0.1vw solid white;
+    border-radius: 50%;
+}
+
+.whiteLine {
+    height: 51vw;
+    margin-top: 5vw;
+}
+
+.ipadView {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4vw;
+}

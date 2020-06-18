@@ -1,0 +1,677 @@
+/*style of calendar*/
+#slide3 .rightBox .userBox {
+    flex-direction: column-reverse;
+    width: auto;
+}
+
+#slide3 .rightBox .userBox .time {
+    margin: 1.1vw 0 0;
+}
+
+#slide3 .container .header {
+    background-image: url(../img/5a5f936da8151f31ddce5b079b4844e5.jpeg);
+    background-position: 0% 92%;
+    padding: 3.34vw 5.6vw 0.9vw;
+}
+
+#slide3 .container .header .topHeader .date {
+    margin-top: 6.5vw;
+}
+
+#slide3 .rightBox .weatherBox {
+    margin: 0;
+}
+
+#slide3 .container .content .tittle {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.57vw;
+    line-height: 2.86vw;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+#slide3 #user1 .do {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.57vw;
+    line-height: 2.6vw;
+    letter-spacing: -0.045em;
+    color: #FFFFFF;
+}
+
+#slide3 #user1 .doLight {
+    opacity: 0.3;
+}
+
+#slide3 .container .content .grid {
+    padding: 2.5vw 8.8vw 6.12vw 5.5vw;
+    justify-content: flex-start;
+}
+
+#slide3 .container .content .toDoList {
+    width: 100%;
+}
+
+#slide3 .container .content .toDoList .col {
+    width: 46%;
+    justify-content: space-between;
+}
+
+#slide3 .container .content .toDoList .col:first-of-type {
+    width: 49.5%;
+    height: 21.2vw;
+    margin: 4.5vw 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#slide3 #user1 .list:last-of-type {
+    background: none;
+    margin: 0;
+    height: 21.7vw;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0.52vw;
+}
+
+#slide3 .whiteLine {
+    height: 32vw;
+    margin-top: 0vw;
+}
+
+#slide3 .circleSvg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: auto;
+    height: 32.2vw;
+}
+
+#slide3 .circleSvg .circle {
+
+    width: 1.2vw;
+    height: 1.2vw;
+    position: relative;
+    left: -0.6vw;
+    top: 60.4%;
+    background: #C76177;
+    border: 0.1vw solid white;
+    border-radius: 50%;
+}
+
+#slide3 #user1 .timeBox {
+    padding: 0.9vw 0.8vw 0 0;
+    width: 5.55vw;
+    height: 32.2vw;
+    justify-content: flex-start;
+    border-right: 1px solid white;
+    margin: 0;
+}
+
+#slide3 #user1 .timeBox .time {
+    margin: 0vw 0 0;
+}
+
+#slide3 #user1 .timeBox .tittleTime {
+    font-size: 1.1vw;
+    line-height: 1.1vw;
+    margin: 0 0 4.55vw;
+    font-family: 'BebasNeue-Regular';
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+#slide3 #user1 .timeBox .time {
+    font-family: 'BebasNeue-Regular';
+    line-height: 1.83vw;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+#slide3 .timeLine {
+    display: flex;
+    flex-direction: row;
+}
+
+#slide3 #user1 .timeBox .time:nth-child(2n+1) {
+    margin: 0 0 2.35vw;
+}
+
+
+#slide3 .toDoList #user1 .do:nth-child(2n-1) {
+    margin: 0px 0 1vw;
+}
+
+
+#slide3 .widget > .ui-datepicker {
+    position: relative;
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+}
+
+#slide3 .widget > .ui-datepicker > .ui-datepicker-header {
+
+    height: 3.3vw;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#slide3 .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-prev,
+#slide3 .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-next {
+    background-image: url(../img/noun_Left_1920907-2.png);
+    background-repeat: no-repeat;
+    background-size: 26%;
+    background-position: center;
+    width: 3.7vw;
+    height: 3.7vw;
+    /*        background: rgba(255, 255, 255, 0.5);*/
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    color: transparent;
+}
+
+#slide3 .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-prev span,
+#slide3 .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-next span {
+
+    /*
+    width: 19px;
+    height: 32px;
+*/
+
+}
+
+.widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-prev {
+    left: 0%;
+}
+
+.widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-next {
+    transform: rotate(180deg);
+}
+
+.widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 1.84vw;
+    line-height: 1.84vw;
+
+}
+
+.widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-title > .ui-datepicker-month {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.84vw;
+    line-height: 1.84vw;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.ui-datepicker-today {
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 3.7vw;
+    height: 3.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-title > .ui-datepicker-month::after {
+    content: ",";
+}
+
+.widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-title > .ui-datepicker-year {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.84vw;
+    line-height: 1.84vw;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.widget > .ui-datepicker > .ui-datepicker-calendar {
+    width: 100%;
+    margin: 2vw 0 0;
+}
+
+.widget > .ui-datepicker > .ui-datepicker-calendar th {
+    font-family: 'BebasNeue-Bold';
+    font-size: 1.84vw;
+    line-height: 1.84vw;
+    width: 3.7vw;
+}
+
+.widget > .ui-datepicker > .ui-datepicker-calendar td {
+    width: 3.7vw;
+    height: 3.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 1vw;
+}
+
+.widget tr {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.widget thead tr {
+    border-top: 1px solid rgba(196, 196, 196, 0.3);
+    border-bottom: 1px solid rgba(196, 196, 196, 0.3);
+    height: 3.3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.widget > .ui-datepicker > .ui-datepicker-calendar td a,
+.widget > .ui-datepicker > .ui-datepicker-calendar td span {
+
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.84vw;
+    line-height: 1.84vw;
+    text-align: center;
+}
+
+.widget > .ui-datepicker > .ui-datepicker-calendar td span {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.84vw;
+    line-height: 1.84vw;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.widget > .ui-datepicker > .ui-datepicker-calendar td.ui-datepicker-today a,
+.widget > .ui-datepicker > .ui-datepicker-calendar td a.ui-state-active {
+    color: #CCC;
+}
+
+
+.widget > .ui-datepicker > .ui-datepicker-calendar td a.ui-state-active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 3.7vw;
+    height: 3.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.widget > .ui-datepicker > .ui-datepicker-calendar td a.ui-state-active:after {
+    background: #FFAC76;
+}
+
+@media all and (max-width:1024px) {
+    #slide3 .container .header {
+        background-image: url(../img/345244412.png);
+        background-position: center;
+        padding: 2vw 4.6vw 24vw 6.3vw;
+    }
+
+    #slide3 .container {
+        background-color: #2D1639;
+    }
+
+    #slide3 .container .content {
+        margin: -20vw 0 0;
+        background-color: transparent;
+        padding: 0px 0 2.5vw;
+    }
+
+    #slide3 .rightBox .userBox {
+        flex-direction: column;
+    }
+
+    #slide3 .rightBox .userBox .time {
+        margin: 0;
+    }
+
+    #slide3 .rightBox .weatherBox,
+    #slide3 .container .header .topHeader .date,
+    #slide3 .container .content .tittle {
+        display: none;
+    }
+
+    #slide3 .container .nav {
+        width: 6vw;
+        margin: 0 6.1vw 0 0;
+    }
+
+    #slide3 .container .nav .burger {
+        width: 100%;
+        height: 0.5vw;
+        margin: 0 0 1.5vw;
+    }
+
+    #slide3 .container .tittle {
+        font-size: 6.9vw;
+        line-height: 6.9vw;
+    }
+
+    #slide3 .container .rightBox {
+        width: auto;
+    }
+
+    #slide3 .container .content .grid {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #slide3 .container .content .toDoList {
+        flex-direction: column-reverse;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-title > .ui-datepicker-month,
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-title > .ui-datepicker-year {
+        font-size: 4.9vw;
+        line-height: 4.9vw;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header {
+        height: 6.3vw;
+        padding: 0 5.4vw;
+    }
+
+    .widget tr {
+        padding: 0 5.4vw;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-prev {
+        left: 7%;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-next {
+        right: 7%;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-prev,
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-next {
+        background-size: 16%;
+        width: 7.5vw;
+        height: 7.5vw;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-calendar th {
+        font-size: 4.9vw;
+        line-height: 4.9vw;
+        width: 7.5vw;
+        height: 4vw;
+    }
+
+    .widget thead tr {
+        height: 6.6vw;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-calendar {
+
+        margin: 1vw 0 0;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-calendar td,
+    .widget > .ui-datepicker > .ui-datepicker-calendar td a.ui-state-active {
+        width: 6vw;
+        height: 6vw;
+        margin: 0;
+    }
+
+
+    #slide3 .container .content .toDoList .col {
+        width: 72%;
+        margin: 0;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-calendar td span,
+    .widget > .ui-datepicker > .ui-datepicker-calendar td a,
+    .widget > .ui-datepicker > .ui-datepicker-calendar td span {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+
+    #slide3 #user1 .timeBox .tittleTime {
+        font-size: 3vw;
+        line-height: 3vw;
+        margin: 0 0 7vw;
+    }
+
+   #slide3  #user1 .timeBox .time {
+        line-height: 4.9vw;
+        font-size: 4.9vw;
+    }
+
+    #slide3 .container .content .toDoList .col:first-of-type {
+        width: 100%;
+        height: 58vw;
+        margin: 0;
+        padding: 0 0 0 5.2vw;
+        margin: 5vw 0 0vw;
+        overflow-y: scroll;
+    }
+
+   #slide3  #user1 .do {
+        font-size: 6.85vw;
+        line-height: 5.85vw;
+        margin: 0 0 7vw;
+    }
+
+   #slide3  .toDoList #user1 .do:nth-child(1) {
+        margin: 0px 0 5vw;
+    }
+
+    #slide3.toDoList #user1 .do:nth-child(2) {
+        margin: 0px 0 5.5vw;
+    }
+
+   #slide3 .toDoList #user1 .do:nth-child(3) {
+        margin: 0px 0 8vw;
+    }
+
+   #slide3 #user1 .do:last-of-type {
+        margin: 0;
+    }
+
+   #slide3 #user1 .timeBox {
+        padding: 2.6vw 3.72vw 2.6vw 0;
+        width: 11.55vw;
+        height: 74vw;
+    }
+
+    #slide3 #user1 .timeBox .time:nth-child(2n+1) {
+        margin: 0 0 4.3vw;
+    }
+
+    #slide3 .circleSvg,
+    #slide3 .whiteLine {
+        height: 100%;
+    }
+
+   #slide3  #user1 .list:last-of-type {
+        height: 100%;
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    #slide3 .circleSvg .circle {
+        width: 3.5vw;
+        height: 3.5vw;
+        left: -1.9vw;
+        top: 74%;
+        border: 0.3vw solid white;
+    }
+
+    #slide3 .slideDot {
+        margin: -5vw 0 0;
+    }
+
+
+    #slide3 .rightBox .time {
+        font-size: 3.9vw;
+        line-height: 3.9vw;
+    }
+
+    #slide3 .rightBox .user {
+        width: 9.2vw;
+        height: 9.2vw;
+    }
+
+    #slide3 .slideDot .dot {
+        width: 1.2vw;
+        height: 1.2vw;
+    }
+}
+
+@media all and (max-width:768px) {
+    .widget > .ui-datepicker > .ui-datepicker-calendar td, .widget > .ui-datepicker > .ui-datepicker-calendar td a.ui-state-active {
+    width: 7.5vw;
+    height: 7.5vw;
+    margin: 0;
+}
+
+    #slide3 .container .nav {
+        display: none;
+    }
+
+    #slide3 .container .tittle {
+        font-family: 'BebasNeue-Regular';
+        font-size: 9.3vw;
+        line-height: 9.3vw;
+    }
+
+    #slide3 .rightBox .user {
+        width: 12.24vw;
+        height: 12.24vw;
+        border: 0.4vw solid #ffffff;
+    }
+
+    #slide3 .rightBox .time {
+        font-size: 7.45vw;
+        line-height: 7.45vw;
+    }
+
+    #slide3 .container .header {
+        padding: 9.26vw;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-title,
+    .widget > .ui-datepicker > .ui-datepicker-calendar th,
+    .widget > .ui-datepicker > .ui-datepicker-calendar td span,
+        {
+        font-size: 4.54vw;
+        line-height: 4.54vw;
+    }
+
+    #slide3 .rightBox .userBox {
+        flex-direction: column-reverse;
+    }
+
+    #slide3 .rightBox .userBox .time {
+        margin: 2.8vw 0 0;
+    }
+
+    #slide3 .container .content .toDoList .col {
+        width: 100%;
+    }
+
+    .widget tr {
+        margin-top: 2vw;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header {
+        width: 73%;
+        padding: 0;
+    }
+
+    .widget thead tr {
+        height: 8.6vw;
+    }
+
+    #slide3 .container .header .bottomHeader,
+   #slide3  .container .header .topHeader {
+        align-items: flex-start;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-prev,
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-next {
+        background-size: 25%;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-prev {
+        left: 3%;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-next {
+        right: 30%;
+    }
+
+    #slide3 #user1 .do {
+        font-size: 6.5vw;
+        line-height: 6.5vw;
+    }
+
+    #slide3 .container .content .toDoList p {
+        font-size: 4.7vw;
+        line-height: 4.7vw;
+    }
+
+   #slide3  #user1 .timeBox .tittleTime {
+        font-size: 2.8vw;
+        line-height: 2.8vw;
+    }
+
+    #slide3 .slideDot .dot {
+        width: 3vw;
+        height: 3vw;
+        margin: 0 1.8vw 0 0;
+    }
+
+    #slide3 .container .content {
+        padding: 0 0 4vw;
+    }
+
+    #slide3 #user1 .timeBox {
+        padding: 2.6vw 3.72vw 2.5vw 0;
+    }
+
+    #slide3 .slideDot {
+        margin: -6vw 0 0;
+    }
+
+    #slide3 .circleSvg .circle {
+        top: 70%;
+    }
+}
+
+@media all and (max-width:425px) {
+    #slide3 .whiteLine rect {
+        width: 1px;
+    }
+}

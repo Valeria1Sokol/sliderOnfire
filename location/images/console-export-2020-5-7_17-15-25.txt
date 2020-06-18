@@ -1,0 +1,95 @@
+WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. mapbox-gl.js:29:309076
+Сценарий из «https://api.openweathermap.org/data/2.5/weather?lang=us&q=Arlington,US&appid=c9d49310f8023ee2617a7634de23c2aa&callback=jQuery112406170364952284166_1588856036820&_=1588856036821» был загружен, хотя его MIME-тип («text/plain») не является допустимым для JavaScript. location.html
+WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 12 mapbox-gl.js:29:309076
+Запрос из постороннего источника заблокирован: Политика одного источника запрещает чтение удаленного ресурса на file:///D:/Upwork/Upwork/Aleksandrs%20Podbrezskis/HTML/images/kate_4x.png. (Причина: запрос CORS выполнен не по http).
+Error: mapbox-gl.js:29:17978
+    onerror file:///D:/Upwork/Upwork/Aleksandrs Podbrezskis/HTML/app/js/mapbox-gl.js:29
+WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. mapbox-gl.js:29:309076
+WebGL warning: texSubImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. mapbox-gl.js:29:309344
+WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. mapbox-gl.js:29:309076
+WebGL warning: texSubImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. mapbox-gl.js:29:309344
+WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 6 mapbox-gl.js:29:309076
+WebGL warning: texSubImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 9 mapbox-gl.js:29:309344
+WebGL: No further warnings will be reported for this WebGL context. (already reported 32 warnings) mapbox-gl.js:29:309344
+Ошибка карты кода: Error: NetworkError when attempting to fetch resource.
+URL ресурса: file:///D:/Upwork/Upwork/Aleksandrs%20Podbrezskis/HTML/app/js/mapbox-gl.js
+URL карты кода: mapbox-gl.js.map 4
+Перешёл на file:///D:/Upwork/Upwork/Aleksandrs%20Podbrezskis/HTML/app/location.html
+GEThttps://code.jquery.com/jquery-1.12.4.js
+[HTTP/1.1 200 OK 337ms]
+
+GEThttps://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css
+[HTTP/1.1 200 OK 228ms]
+
+GEThttps://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css
+[HTTP/2 200 OK 118ms]
+
+GEThttps://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap
+[HTTP/2 200 OK 226ms]
+
+GEThttps://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap
+[HTTP/2 200 OK 172ms]
+
+GEThttps://fonts.gstatic.com/s/quicksand/v20/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o58a-wg.woff2
+[HTTP/2 200 OK 210ms]
+
+GEThttps://fonts.gstatic.com/s/bebasneue/v1/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2
+[HTTP/2 200 OK 145ms]
+
+GEThttps://api.openweathermap.org/data/2.5/weather?lang=us&q=Arlington,US&appid=c9d49310f8023ee2617a7634de23c2aa&callback=jQuery1124017298756641279844_1588860899573&_=1588860899574
+[HTTP/1.1 200 OK 637ms]
+
+XHRGEThttps://api.mapbox.com/styles/v1/mapbox/streets-v9?access_token=pk.eyJ1IjoiYWxleDEyNzE0IiwiYSI6ImNrOXVicHFjODAwNmUzbXBnMjFsYmxpZmYifQ.EvrXE5fhp-gUpHLkAyPy6Q
+[HTTP/1.1 200 OK 278ms]
+
+WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. mapbox-gl.js:29:309076
+Ошибка карты кода: Error: NetworkError when attempting to fetch resource.
+URL ресурса: file:///D:/Upwork/Upwork/Aleksandrs%20Podbrezskis/HTML/app/js/mapbox-gl.js
+URL карты кода: mapbox-gl.js.map
+Сценарий из «https://api.openweathermap.org/data/2.5/weather?lang=us&q=Arlington,US&appid=c9d49310f8023ee2617a7634de23c2aa&callback=jQuery1124017298756641279844_1588860899573&_=1588860899574» был загружен, хотя его MIME-тип («text/plain») не является допустимым для JavaScript. location.html
+GEThttps://fonts.gstatic.com/s/quicksand/v20/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkKEo58a-wg.woff2
+[HTTP/2 200 OK 28ms]
+
+GEThttps://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.woff2
+[HTTP/2 200 OK 92ms]
+
+XHRGEThttps://api.mapbox.com/v4/mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v7.json?secure&access_token=pk.eyJ1IjoiYWxleDEyNzE0IiwiYSI6ImNrOXVicHFjODAwNmUzbXBnMjFsYmxpZmYifQ.EvrXE5fhp-gUpHLkAyPy6Q
+[HTTP/1.1 200 OK 92ms]
+
+XHRGEThttps://api.mapbox.com/styles/v1/mapbox/streets-v9/sprite.json?access_token=pk.eyJ1IjoiYWxleDEyNzE0IiwiYSI6ImNrOXVicHFjODAwNmUzbXBnMjFsYmxpZmYifQ.EvrXE5fhp-gUpHLkAyPy6Q
+[HTTP/1.1 200 OK 104ms]
+
+XHRGEThttps://api.mapbox.com/styles/v1/mapbox/streets-v9/sprite.png?access_token=pk.eyJ1IjoiYWxleDEyNzE0IiwiYSI6ImNrOXVicHFjODAwNmUzbXBnMjFsYmxpZmYifQ.EvrXE5fhp-gUpHLkAyPy6Q
+[HTTP/1.1 200 OK 372ms]
+
+XHRPOSThttps://events.mapbox.com/events/v2?access_token=pk.eyJ1IjoiYWxleDEyNzE0IiwiYSI6ImNrOXVicHFjODAwNmUzbXBnMjFsYmxpZmYifQ.EvrXE5fhp-gUpHLkAyPy6Q
+[HTTP/2 204 No Content 673ms]
+
+Ошибка карты кода: Error: NetworkError when attempting to fetch resource.
+URL ресурса: file:///D:/Upwork/Upwork/Aleksandrs%20Podbrezskis/HTML/app/js/mapbox-gl.js
+URL карты кода: mapbox-gl.js.map
+XHRGEThttps://api.mapbox.com/fonts/v1/mapbox/DIN%20Offc%20Pro%20Italic,Arial%20Unicode%20MS%20Regular/0-255.pbf?access_token=pk.eyJ1IjoiYWxleDEyNzE0IiwiYSI6ImNrOXVicHFjODAwNmUzbXBnMjFsYmxpZmYifQ.EvrXE5fhp-gUpHLkAyPy6Q
+[HTTP/1.1 200 OK 50ms]
+
+XHRGEThttps://api.mapbox.com/fonts/v1/mapbox/DIN%20Offc%20Pro%20Medium,Arial%20Unicode%20MS%20Regular/0-255.pbf?access_token=pk.eyJ1IjoiYWxleDEyNzE0IiwiYSI6ImNrOXVicHFjODAwNmUzbXBnMjFsYmxpZmYifQ.EvrXE5fhp-gUpHLkAyPy6Q
+[HTTP/1.1 200 OK 71ms]
+
+XHRGEThttps://api.mapbox.com/fonts/v1/mapbox/DIN%20Offc%20Pro%20Medium,Arial%20Unicode%20MS%20Regular/8192-8447.pbf?access_token=pk.eyJ1IjoiYWxleDEyNzE0IiwiYSI6ImNrOXVicHFjODAwNmUzbXBnMjFsYmxpZmYifQ.EvrXE5fhp-gUpHLkAyPy6Q
+[HTTP/1.1 200 OK 208ms]
+
+XHRGEThttps://api.mapbox.com/fonts/v1/mapbox/DIN%20Offc%20Pro%20Regular,Arial%20Unicode%20MS%20Regular/0-255.pbf?access_token=pk.eyJ1IjoiYWxleDEyNzE0IiwiYSI6ImNrOXVicHFjODAwNmUzbXBnMjFsYmxpZmYifQ.EvrXE5fhp-gUpHLkAyPy6Q
+[HTTP/1.1 200 OK 308ms]
+
+XHRGEThttps://api.mapbox.com/fonts/v1/mapbox/DIN%20Offc%20Pro%20Regular,Arial%20Unicode%20MS%20Regular/8192-8447.pbf?access_token=pk.eyJ1IjoiYWxleDEyNzE0IiwiYSI6ImNrOXVicHFjODAwNmUzbXBnMjFsYmxpZmYifQ.EvrXE5fhp-gUpHLkAyPy6Q
+[HTTP/1.1 200 OK 44ms]
+
+WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 9 mapbox-gl.js:29:309076
+Запрос из постороннего источника заблокирован: Политика одного источника запрещает чтение удаленного ресурса на file:///D:/Upwork/Upwork/Aleksandrs%20Podbrezskis/HTML/images/kate_4x.png. (Причина: запрос CORS выполнен не по http).
+Error: mapbox-gl.js:29:17978
+WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. mapbox-gl.js:29:309076
+WebGL warning: texSubImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. mapbox-gl.js:29:309344
+WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. mapbox-gl.js:29:309076
+WebGL warning: texSubImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. mapbox-gl.js:29:309344
+WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 6 mapbox-gl.js:29:309076
+WebGL warning: texSubImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads. 12 mapbox-gl.js:29:309344
+WebGL: No further warnings will be reported for this WebGL context. (already reported 32 warnings) mapbox-gl.js:29:309344

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">	
+	<head lang="en">
+		<title>Title Site</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<meta name="description" content="" />    
+		<meta name="keywords" content="" />
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
+		<link href="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css" rel="stylesheet" />
+		<script src="https://use.fontawesome.com/cf22e4f6d1.js"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css" rel="stylesheet" type="text/css" media="all"/>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		
+	</head>
+	<body>
+	
+
+		
+		
+        <div class="content_wrap">
+
+
+			<div class="map_wrapper">
+				<div id="map"></div>
+			</div>
+
+			<div class="time_mobile">
+				<p>15:34</p>
+			</div>
+
+			<div class="family_wrap mobile">
+				<div class="title">
+					<p>Family</p>
+					<span class="icon">
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</span>
+				</div>
+			</div>
+
+			<div class="menu_location_wrap">
+
+				<div class="menu_location">
+					<div class="individual">
+						<div class="time">
+							<p>15:34</p>
+						</div>
+						<div id="my_place" class="avatar">
+							<img src="images/avatar.png" alt="avatar">
+						</div>
+					</div>
+
+					<div class="location_info">
+						<div class="city">
+							<p>San Francisco</p>
+						</div>
+					</div>
+
+					<div class="weather_wrap">
+						<div class="weather_temt">
+
+							<span class="weather-temperature"></span>
+							<i class="weather-icon wi"></i>
+						</div>
+
+						<div class="weather_wind">
+							<span class="weather_wind_speed"></span>
+							<span class="icon_wind"></span>
+						</div>
+
+					</div><!--END WEATHER WRAP-->
+
+					<div class="family_wrap">
+						<div class="title">
+							<p>Family</p>
+							<span class="icon">
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</span>
+						</div>
+						<ul class="family_list">
+							<li id="daniel"><!--active-->
+								<ul class="avatar_wrap">
+									<li class="avatar">
+										<img  src="images/f_avatar_1.png" alt="icon">
+									</li>
+									<li class="charge">
+										<img src="images/battery_half.png" alt="icon">
+									</li>
+								</ul>
+								<ul class="person_info">
+									<li>
+										<span class="name">Daniel</span>
+										<span class="place school">School</span>
+									</li>
+									<li>
+										<span class="distans">15 min</span>
+										<span class="length">5 miles</span>
+									</li>
+								</ul>
+							</li>
+							<li id="isabella">
+								<ul class="avatar_wrap">
+									<li class="avatar">
+										<img  src="images/f_avatar_2.png" alt="icon">
+									</li>
+									<li class="charge">
+										<img src="images/battery_half.png" alt="icon">
+									</li>
+								</ul>
+								<ul class="person_info">
+									<li>
+										<span class="name">Isabella</span>
+										<span class="place ">45 High street</span>
+									</li>
+									<li>
+										<span class="distans">5 min</span>
+										<span class="length">15 miles</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="avatar_wrap">
+									<li class="avatar">
+										<img  src="images/f_avatar_3.png" alt="icon">
+									</li>
+									<li class="charge">
+										<img src="images/battery_half.png" alt="icon">
+									</li>
+								</ul>
+								<ul class="person_info">
+									<li>
+										<span class="name">Elana</span>
+										<span class="place home">Home</span>
+									</li>
+									<li>
+										<span class="distans">15 min</span>
+										<span class="length">3 miles</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="avatar_wrap">
+									<li class="avatar">
+										<img  src="images/f_avatar_4.png" alt="icon">
+									</li>
+									<li class="charge">
+										<img src="images/battery_half.png" alt="icon">
+									</li>
+								</ul>
+								<ul class="person_info">
+									<li>
+										<span class="name">Kate</span>
+										<span class="place">412 Bloom Boulevard</span>
+									</li>
+									<li>
+										<span class="distans">35 min</span>
+										<span class="length">30 miles</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="avatar_wrap">
+									<li class="avatar">
+										<img  src="images/f_avatar_5.png" alt="icon">
+									</li>
+									<li class="charge">
+										<img src="images/battery_half.png" alt="icon">
+									</li>
+								</ul>
+								<ul class="person_info">
+									<li>
+										<span class="name">Alex</span>
+										<span class="place home">Home</span>
+									</li>
+									<li>
+										<span class="distans">15 min</span>
+										<span class="length">10 miles</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="pagination">
+							<li><a href="#"></a></li>
+							<li class="active"><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</div>
+
+				</div><!--END MENU LOCATION-->
+
+			</div><!--END MENU LOC WRAP-->
+
+			<div class="activator_menu"></div>
+
+			<div class="menu_respond">
+				<button type="button" class="tcon tcon-menu--xcross" aria-label="toggle menu">
+					<span class="tcon-menu__lines" aria-hidden="true"></span>
+					<span class="tcon-visuallyhidden">toggle menu</span>
+				</button>
+			</div>
+
+        </div><!--END CONTENT WRAP-->
+
+		<!--<script src="js/mapbox-gl.js"></script>-->
+		<script src="js/transformicons.js"></script>
+		<script src="js/openWeather.js"></script>
+		<script src="js/main.js"></script>
+
+		<script>
+
+		</script>
+	</body>
+</html>

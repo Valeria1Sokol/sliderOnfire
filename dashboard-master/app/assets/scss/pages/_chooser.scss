@@ -1,0 +1,170 @@
+
+    .chooser-page {
+        background: #0A0952;
+        background-image: url('../images/bg/chooser-bg.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        .header {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-items: center;
+            padding-left: 90px;
+            padding-right: 90px;
+              // .header__column
+              &__column {
+                  align-items: center;
+                    &:nth-of-type(3){
+                        justify-self: flex-end;
+                    }
+              }
+            &__page-title {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 60px;
+                line-height: 60px;
+                text-align: center;
+            }
+        }
+    }
+    
+    .chooser {
+        &__users {
+            position: relative;
+            top: 30vh;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            align-items: center;
+            justify-items: center;
+            grid-row-gap: 30px;
+            .avatar {
+                display: flex;
+                flex-direction: column;
+              &__img {
+                    height: 200px;
+                    width: 200px;
+              }
+            }
+        }
+    
+        &__footer {
+            position: absolute;
+            width: 100vw;
+            height: 135px;
+            bottom: 0;
+            background: url('../images/chooser-footer.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+        &__btn {
+            width: 93px;
+            height: 93px;
+            background: #FFFFFF;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            span {
+                display: inline-block;
+                background: #424F6D;
+                width: 35px;
+                height: 5px;
+                position: absolute;
+            }
+        
+            span:last-of-type {
+                height: 35px;
+                width: 5px;
+            }
+        }
+    }
+    
+    }
+    
+
+ @media only screen and (min-width: 1024px) and (orientation: portrait) { 
+
+    .chooser-page {
+        .header {
+            display: grid;
+            grid-template-columns:  10% 90%;
+            align-items: center;
+            padding-left: 77px;
+              // .header__column
+              &__column {
+                  align-items: center;
+                    &:nth-of-type(3){
+                       display: none;
+                    }
+              }
+            &__page-title {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 120px;
+                line-height: 120px;
+                text-align: center;
+            }
+        }
+    }
+
+
+    .chooser {
+        &__users {
+            grid-template-columns: 1fr 1fr;
+            top: 5vh;
+            .avatar {
+                &__img {
+                    height: 300px;
+                    width: 300px;
+                }
+            }
+        }
+
+        &__footer {
+            height: 100px;
+        }
+
+        &__footer {
+            width: 100vw;
+            height: 225px;
+            bottom: 0;
+            background: url('../images/chooser-footer-mobile.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            &__btn {
+                width: 186px;
+                height: 186px;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                cursor: pointer;
+                span {
+                    display: inline-block;
+                    width: 70px;
+                    height: 10px;
+                    position: absolute;
+                }
+                span:last-of-type {
+                    height: 70px;
+                    width: 10px;
+                }
+            }
+        }
+    }
+
+
+    .prev-btn {
+        width: 32px;
+        height: 64px;
+    }
+
+
+
+
+ }

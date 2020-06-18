@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>OnFire Presentation</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage demo scrolling speed." />
+    <meta name="keywords" content="fullpage,jquery,demo,scrolling,speed,scrollingSpeed" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!--    style and script 1+2 slide-->
+
+    <link rel="stylesheet" href="twoscreensvdots/css/style.css">
+    <script src="https://kit.fontawesome.com/f982e94d70.js" crossorigin="anonymous"></script>
+    <!--*********-->
+
+    <!--    style and script 3+4 slide-->
+    <link rel="stylesheet" href="onFire-master/style/style.css">
+    <link rel="stylesheet" href="onFire-master/style/styleCalendar.css">
+    <link rel="stylesheet" href="onFire-master/style/font.css">
+    <link rel="stylesheet" href="onFire-master/style/mediaToDoList.css">
+    <script src="onFire-master/script/sortable.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="onFire-master/script/calendar.js"></script>
+    <!--*******-->
+
+
+    <!--   style and script 5th slide location-->
+    <link rel="icon" href="dashboard-master/app/assets/images/favicon.ico">
+    <!-- styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;515;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/5pagestyle.css">
+
+    <!--    *******-->
+
+    <!--   style and script 6th slide location-->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
+    <script src="https://use.fontawesome.com/cf22e4f6d1.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="location/css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+
+    <!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+
+
+    <div id="fullpage">
+        <div class="section" id="section1">
+            <div class="slide" id="slide1">
+                <div class="intro">
+                    <div class="src">
+                        <div class="float__menu">
+                            <div class="left__menu">
+                                <div class="menu__button">
+                                    <a href="#">
+                                        <img src="twoscreensvdots/img/menu.svg" alt="menu">
+                                    </a>
+                                </div>
+                                <div class="weather__block">
+                                    <span>London</span>
+                                    <div class="weather__info">
+                                        <div class="weather__temp">
+                                            <span>21<sup>o</sup></span>
+                                            <img src="twoscreensvdots/img/weathericon.svg" alt="weathericon">
+                                        </div>
+                                        <div class="weather__wind">
+                                            <span>4 mph </span>
+                                            <img src="twoscreensvdots/img/windicon.svg" alt="windicon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile__menu">
+                                <div class="profile__image">
+                                    <img src="twoscreensvdots/img/profile1.png" alt="profile">
+                                </div>
+                                <div class="menu__time">
+                                    <p>15:34</p>
+                                    <span>SEP 23</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="first__screen">
+                            <div class="outer__first--screen">
+                                <div class="left__first--screen">
+                                    <div class="task__block">
+                                        <h2 class="header__title">TASKS</h2>
+                                        <div class="wrap__task">
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test1" checked>
+                                                    <label for="test1">Complete paperwork</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test2">
+                                                    <label for="test2">Do uni assignment</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test3">
+                                                    <label for="test3">Order airplane tickets</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test4">
+                                                    <label for="test4">Organise trip</label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="habits__block">
+                                        <h2 class="header__title">habits</h2>
+                                        <div class="habits__wrap">
+                                            <div class="elem__habits green__habit">
+                                                <div class="habits__status">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" id="css">
+                                                        <label for="css"><img src="twoscreensvdots/img/checkgreendark.svg" alt="checkgreendark"></label>
+                                                    </div>
+                                                </div>
+                                                <div class="habits__info">
+                                                    <p>Go for a run</p>
+                                                    <div class="habits__days">
+                                                        <div class="habits__elem green__elem">
+                                                            <div class="habits__stat"></div>
+                                                            <span>S</span>
+                                                        </div>
+                                                        <div class="habits__elem green__elem">
+                                                            <div class="habits__stat"></div>
+                                                            <span>M</span>
+                                                        </div>
+                                                        <div class="habits__elem darkgreen__elem">
+                                                            <div class="habits__stat"></div>
+                                                            <span>T</span>
+                                                        </div>
+                                                        <div class="habits__elem green__elem">
+                                                            <div class="habits__stat"></div>
+                                                            <span>W</span>
+                                                        </div>
+                                                        <div class="habits__elem darkgreen__elem">
+                                                            <div class="habits__stat"></div>
+                                                            <span>T</span>
+                                                        </div>
+                                                        <div class="habits__elem darkgreen__elem">
+                                                            <div class="habits__stat"></div>
+                                                            <span>F</span>
+                                                        </div>
+                                                        <div class="habits__elem darkgreen__elem">
+                                                            <div class="habits__stat"></div>
+                                                            <span>S</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elem__habits green__habit">
+                                                <div class="habits__status">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" id="css">
+                                                        <label for="css"><img src="twoscreensvdots/img/checkgreendark.svg" alt="checkgreendark"></label>
+                                                    </div>
+                                                </div>
+                                                <div class="habits__info">
+                                                    <p>Do 10 pulls up</p>
+                                                    <div class="habits__days">
+                                                        <div class="habits__elem green__elem">
+                                                            <div class="habits__stat"></div>
+                                                            <span>M</span>
+                                                        </div>
+                                                        <div class="habits__elem green__elem">
+                                                            <div class="habits__stat"></div>
+                                                            <span>W</span>
+                                                        </div>
+                                                        <div class="habits__elem darkgreen__elem">
+                                                            <div class="habits__stat"></div>
+                                                            <span>F</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elem__habits darkgreen__habit">
+                                                <div class="habits__status">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" id="css">
+                                                        <label for="css"><img src="twoscreensvdots/img/checkgreendark.svg" alt="checkgreendark"></label>
+                                                    </div>
+                                                </div>
+                                                <div class="habits__info">
+                                                    <p>Yoga exercise</p>
+                                                    <div class="habits__days">
+                                                        <div class="habits__elem green__elem">
+                                                            <div class="habits__stat"></div>
+                                                            <span>S</span>
+                                                        </div>
+                                                        <div class="habits__elem green__elem">
+                                                            <div class="habits__stat"></div>
+                                                            <span>T</span>
+                                                        </div>
+                                                        <div class="habits__elem darkgreen__elem">
+                                                            <div class="habits__stat"></div>
+                                                            <span>TH</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center__first--screen">
+                                    <div class="today__task">
+                                        <h2 class="header__title">today</h2>
+                                        <div class="today__wrap">
+                                            <div class="elem__wrap">
+                                                <div class="time__diapason">
+                                                    <span class="full__day	">all-day</span>
+                                                </div>
+                                                <div class="task__info">
+                                                    <p>Renew OnFire subscription</p>
+                                                </div>
+                                            </div>
+                                            <div class="elem__wrap disabled__elem">
+                                                <div class="time__diapason">
+                                                    <span>10:30<br>11:00</span>
+                                                </div>
+                                                <div class="task__info">
+                                                    <p>Package 2353 delivery to office</p>
+                                                </div>
+                                            </div>
+                                            <div class="elem__wrap disabled__elem">
+                                                <div class="time__diapason">
+                                                    <span>12:00<br>13:00</span>
+                                                </div>
+                                                <div class="task__info">
+                                                    <p>Kids school party</p>
+                                                </div>
+                                            </div>
+                                            <div class="elem__wrap important__task">
+                                                <div class="time__diapason">
+                                                    <div class="point__task"></div>
+                                                    <span>14:00<br>16:00</span>
+                                                </div>
+                                                <div class="task__info">
+                                                    <p>Meeting with John</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right__first--screen">
+                                    <div class="goal__block">
+                                        <h2 class="header__title">Goals</h2>
+                                        <div class="goal__inner">
+                                            <div class="elem__goal darkgreen__goal">
+                                                <h6>Stay healthy</h6>
+                                                <div class="goal__progress">
+                                                    <div class="inner__progress" data-width="65"></div>
+                                                </div>
+                                            </div>
+                                            <div class="elem__goal yellow__goal">
+                                                <h6>Family counselling course</h6>
+                                                <div class="goal__progress">
+                                                    <div class="inner__progress" data-width="45"></div>
+                                                </div>
+                                            </div>
+                                            <div class="elem__goal lightgreen__goal">
+                                                <h6>Learn marketing</h6>
+                                                <div class="goal__progress">
+                                                    <div class="inner__progress" data-width="95"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="day__counts--block">
+                                        <h2 class="header__title">day counts</h2>
+                                        <div class="day__counts--inner">
+                                            <div class="day__counts--elem">
+                                                <p>Christmas day</p>
+                                                <div class="counts__inn">
+                                                    <span>103</span><img src="twoscreensvdots/img/topday.svg" alt="topday">
+                                                </div>
+                                            </div>
+                                            <div class="day__counts--elem">
+                                                <p>Birthday</p>
+                                                <div class="counts__inn">
+                                                    <span>29</span><img src="twoscreensvdots/img/topday.svg" alt="topday">
+                                                </div>
+                                            </div>
+                                            <div class="day__counts--elem">
+                                                <p>New year</p>
+                                                <div class="counts__inn">
+                                                    <span>34</span><img src="twoscreensvdots/img/bottomday.svg" alt="topday">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dots__screen">
+                            <ul>
+                                <li><a class="active__dot" href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide" id="slide2" style="position: relative">
+                <div class="intro">
+                    <div class="src">
+                        <div class="right__highlight">
+                            <div class="arrow__highlight">
+                                <a id="open__menu" href="#">
+                                    <img src="twoscreensvdots/img/menuarrow.svg" alt="menuarrow">
+                                </a>
+                            </div>
+                        </div>
+                        <div id="right__hightlight" class="hightlight__fixed">
+                            <div class="highlight__task--wrapper">
+                                <div class="today__task">
+                                    <h2 class="header__title">today</h2>
+                                    <div class="today__wrap">
+                                        <div class="elem__wrap">
+                                            <div class="time__diapason">
+                                                <span class="full__day	">all-day</span>
+                                            </div>
+                                            <div class="task__info">
+                                                <p>Renew OnFire subscription</p>
+                                            </div>
+                                        </div>
+                                        <div class="elem__wrap disabled__elem">
+                                            <div class="time__diapason">
+                                                <span>10:30<br>11:00</span>
+                                            </div>
+                                            <div class="task__info">
+                                                <p>Package 2353 delivery to office</p>
+                                            </div>
+                                        </div>
+                                        <div class="elem__wrap disabled__elem">
+                                            <div class="time__diapason">
+                                                <span>12:00<br>13:00</span>
+                                            </div>
+                                            <div class="task__info">
+                                                <p>Kids school party</p>
+                                            </div>
+                                        </div>
+                                        <div class="elem__wrap important__task">
+                                            <div class="time__diapason">
+                                                <div class="point__task"></div>
+                                                <span>14:00<br>16:00</span>
+                                            </div>
+                                            <div class="task__info">
+                                                <p>Meeting with John</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="today__task">
+                                    <h2 class="header__title">Tomorrow</h2>
+                                    <div class="today__wrap">
+                                        <div class="elem__wrap disabled__elem">
+                                            <div class="time__diapason">
+                                                <span class="full__day	">all-day</span>
+                                            </div>
+                                            <div class="task__info">
+                                                <p>Renew OnFire subscription</p>
+                                            </div>
+                                        </div>
+                                        <div class="elem__wrap disabled__elem">
+                                            <div class="time__diapason">
+                                                <span>10:30<br>11:00</span>
+                                            </div>
+                                            <div class="task__info">
+                                                <p>Trip planning</p>
+                                            </div>
+                                        </div>
+                                        <div class="elem__wrap disabled__elem">
+                                            <div class="time__diapason">
+                                                <span>12:00<br>13:00</span>
+                                            </div>
+                                            <div class="task__info">
+                                                <p>Dance recital</p>
+                                            </div>
+                                        </div>
+                                        <div class="elem__wrap disabled__elem ">
+                                            <div class="time__diapason">
+                                                <div class="point__task"></div>
+                                                <span>14:00<br>16:00</span>
+                                            </div>
+                                            <div class="task__info">
+                                                <p>Night out with wife</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="today__task">
+                                    <h2 class="header__title">Tomorrow</h2>
+                                    <div class="today__wrap">
+                                        <div class="elem__wrap disabled__elem">
+                                            <div class="time__diapason">
+                                                <span class="full__day	">all-day</span>
+                                            </div>
+                                            <div class="task__info">
+                                                <p>Renew OnFire subscription</p>
+                                            </div>
+                                        </div>
+                                        <div class="elem__wrap disabled__elem">
+                                            <div class="time__diapason">
+                                                <span>10:30<br>11:00</span>
+                                            </div>
+                                            <div class="task__info">
+                                                <p>Trip planning</p>
+                                            </div>
+                                        </div>
+                                        <div class="elem__wrap disabled__elem">
+                                            <div class="time__diapason">
+                                                <span>12:00<br>13:00</span>
+                                            </div>
+                                            <div class="task__info">
+                                                <p>Dance recital</p>
+                                            </div>
+                                        </div>
+                                        <div class="elem__wrap disabled__elem ">
+                                            <div class="time__diapason">
+                                                <div class="point__task"></div>
+                                                <span>14:00<br>16:00</span>
+                                            </div>
+                                            <div class="task__info">
+                                                <p>Night out with wife</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float__menu float__menu--center">
+                            <div class="left__menu">
+                                <div class="menu__button">
+                                    <a href="#">
+                                        <img src="twoscreensvdots/img/menu.svg" alt="menu">
+                                    </a>
+                                </div>
+                                <p>tasks</p>
+                            </div>
+                            <div class="weather__block">
+                                <span>London</span>
+                                <div class="weather__info">
+                                    <div class="weather__temp">
+                                        <span>21<sup>o</sup></span>
+                                        <img src="twoscreensvdots/img/weathericon.svg" alt="weathericon">
+                                    </div>
+                                    <div class="weather__wind">
+                                        <span>4 mph </span>
+                                        <img src="twoscreensvdots/img/windicon.svg" alt="windicon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile__menu">
+                                <div class="profile__image">
+                                    <img src="twoscreensvdots/img/profile1.png" alt="profile">
+                                </div>
+                                <div class="menu__time">
+                                    <p>15:34</p>
+                                    <span>SEP 23</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="first__screen">
+                            <div class="outer__first--screen">
+                                <div class="task__tab">
+                                    <ul>
+                                        <li><a href="#" data-block="home1" class="active__tab">Home</a></li>
+                                        <li><a href="#" data-block="home2">work</a></li>
+                                        <li><a href="#" data-block="home3">school</a></li>
+                                        <li><a href="#" data-block="home4">startup</a></li>
+                                        <li><a href="#" data-block="home5">website</a></li>
+                                    </ul>
+                                </div>
+                                <div class="task__global" id="home1">
+                                    <div class="wrap__task--theme">
+                                        <h2 class="header__title">Today</h2>
+                                        <div class="wrap__task">
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test1" checked>
+                                                    <label for="test1">Complete paperwork</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test2">
+                                                    <label for="test2">Do uni assignment</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test3">
+                                                    <label for="test3">Order airplane tickets</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test4">
+                                                    <label for="test4">Organise trip</label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h2 class="header__title">Tomorrow</h2>
+                                        <div class="wrap__task">
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test5" checked>
+                                                    <label for="test1">Complete paperwork</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test6">
+                                                    <label for="test2">Do uni assignment</label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task__global" id="home2" style="display: none;">
+                                    <div class="wrap__task--theme">
+                                        <h2 class="header__title">Today1</h2>
+                                        <div class="wrap__task">
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test1" checked>
+                                                    <label for="test1">Complete paperwork</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test2">
+                                                    <label for="test2">Do uni assignment</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test3">
+                                                    <label for="test3">Order airplane tickets</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test4">
+                                                    <label for="test4">Organise trip</label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h2 class="header__title">Tomorrow1</h2>
+                                        <div class="wrap__task">
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test5" checked>
+                                                    <label for="test1">Complete paperwork</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test6">
+                                                    <label for="test2">Do uni assignment</label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task__global" id="home3" style="display: none;">
+                                    <div class="wrap__task--theme">
+                                        <h2 class="header__title">Today2</h2>
+                                        <div class="wrap__task">
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test1" checked>
+                                                    <label for="test1">Complete paperwork</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test2">
+                                                    <label for="test2">Do uni assignment</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test3">
+                                                    <label for="test3">Order airplane tickets</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test4">
+                                                    <label for="test4">Organise trip</label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h2 class="header__title">Tomorrow2</h2>
+                                        <div class="wrap__task">
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test5" checked>
+                                                    <label for="test1">Complete paperwork</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test6">
+                                                    <label for="test2">Do uni assignment</label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task__global" id="home4" style="display: none;">
+                                    <div class="wrap__task--theme">
+                                        <h2 class="header__title">Today3</h2>
+                                        <div class="wrap__task">
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test1" checked>
+                                                    <label for="test1">Complete paperwork</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test2">
+                                                    <label for="test2">Do uni assignment</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test3">
+                                                    <label for="test3">Order airplane tickets</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test4">
+                                                    <label for="test4">Organise trip</label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h2 class="header__title">Tomorrow3</h2>
+                                        <div class="wrap__task">
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test5" checked>
+                                                    <label for="test1">Complete paperwork</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test6">
+                                                    <label for="test2">Do uni assignment</label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task__global" id="home5" style="display: none;">
+                                    <div class="wrap__task--theme">
+                                        <h2 class="header__title">Today4</h2>
+                                        <div class="wrap__task">
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test1" checked>
+                                                    <label for="test1">Complete paperwork</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test2">
+                                                    <label for="test2">Do uni assignment</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test3">
+                                                    <label for="test3">Order airplane tickets</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test4">
+                                                    <label for="test4">Organise trip</label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <h2 class="header__title">Tomorrow4</h2>
+                                        <div class="wrap__task">
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test5" checked>
+                                                    <label for="test1">Complete paperwork</label>
+                                                </p>
+                                            </div>
+                                            <div class="task__elem">
+                                                <p>
+                                                    <input type="checkbox" id="test6">
+                                                    <label for="test2">Do uni assignment</label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dots__screen">
+                            <ul>
+                                <li><a class="active__dot" href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                <div class="intro">
+                    <div class="container">
+                        <header class="header">
+                            <div class="bottomHeader">
+                                <div class="leftBox">
+                                    <div class="nav">
+                                        <span class='burger'></span>
+                                        <span class='burger'></span>
+                                        <span class='burger'></span>
+                                    </div>
+                                    <p class="tittle">CALENDAR</p>
+                                </div>
+                                <div class="rightBox">
+                                    <div class="weatherBox">
+                                        <div class="location">London</div>
+                                        <div class="weather">
+                                            <div class="temp">21 <span>o</span></div>
+                                            <div class="tempImg"><img src="onFire-master/img/Vector.png" alt=""></div>
+                                            <div class="atmos">4 mph</div>
+                                            <div class="atmosImg"><img src="onFire-master/img/atmospheric%201.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="userBox">
+                                        <div class="time">11:34</div>
+                                        <div class="user"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="topHeader">
+                                <p class="date">July 13, Tuesday</p>
+                            </div>
+                        </header>
+                        <div class="content">
+                            <p class="tittle">4 appointments</p>
+                            <div class="grid">
+                                <div class="toDoList">
+                                    <div class="col" id="user1">
+                                        <div class="timeLine">
+                                            <div class="timeBox">
+                                                <p class="tittleTime">All-day</p>
+                                                <p class="lightTime time">10:30</p>
+                                                <p class="lightTime time">11:00</p>
+                                                <p class="lightTime time">12:00</p>
+                                                <p class="lightTime time">13:00</p>
+                                                <p class="time">14:00</p>
+                                                <p class="time">16:00</p>
+                                            </div>
+                                            <div class="circleSvg">
+                                                <div class="circle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <p class="do">Renew OnFire subscription</p>
+                                            <p class="doLight do">Package 2353 delivery to<br> office</p>
+                                            <p class="doLight do">Kids school party</p>
+                                            <p class="do">Meeting with John</p>
+                                        </div>
+                                    </div>
+                                    <div class="col" id="user2">
+                                        <div class="widget"></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="slideDot">
+                                <div class="dot active"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide4">
+                <div class="intro">
+                    <div class="src">
+                        <div class="container">
+                            <header class="header">
+                                <div class="bottomHeader">
+                                    <div class="leftBox">
+                                        <div class="nav">
+                                            <span class='burger'></span>
+                                            <span class='burger'></span>
+                                            <span class='burger'></span>
+                                        </div>
+                                        <p class="tittle">CALENDAR</p>
+                                    </div>
+                                    <div class="rightBox">
+                                        <div class="selectBox">
+                                            <p class="selectText">Family</p>
+                                            <svg width="42" height="25" viewBox="0 0 42 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3 3L20.5135 22L39 3" stroke="#091637" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+
+                                        </div>
+                                        <div class="ipadView">
+                                            <div class="weatherBox">
+                                                <div class="location">London</div>
+                                                <div class="weather">
+                                                    <div class="temp">21 <span>o</span></div>
+                                                    <div class="tempImg"><img src="onFire-master/img/Vector.png" alt=""></div>
+                                                    <div class="atmos">4 mph</div>
+                                                    <div class="atmosImg"><img src="onFire-master/img/atmospheric%201.png" alt=""></div>
+                                                </div>
+                                            </div>
+                                            <div class="userBox">
+                                                <div class="time">11:34</div>
+                                                <div class="user"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="topHeader">
+                                    <p class="date">July 13, Tuesday</p>
+                                </div>
+                            </header>
+                            <div class="content">
+                                <div class="grid">
+                                    <div class="timeBox">
+                                        <p class="tittleTime">All-day</p>
+                                        <p class="lightTime time">7:00</p>
+                                        <p class="lightTime time">8:00</p>
+                                        <p class="lightTime time">9:00</p>
+                                        <p class="lightTime time">10:00</p>
+                                        <p class="lightTime time">11:00</p>
+                                        <p class="time">12:00</p>
+                                        <p class="time">13:00</p>
+                                        <p class="time">14:00</p>
+                                        <p class="time">15:00</p>
+                                        <p class="time">16:00</p>
+                                        <p class="time">17:00</p>
+                                        <p class="time">18:00</p>
+                                        <p class="time">19:00</p>
+                                    </div>
+
+                                    <div class="toDoList" id="sortablelist" data-id="1">
+                                        <div class="col" data-id="2" id="user1">
+                                            <div class="user"><img src="onFire-master/img/Ellipse%2046.png" alt="">
+                                                <p class="name">Daniel</p>
+                                            </div>
+                                            <div class="allDayList">
+                                                <p>Renew OnFire subscription</p>
+                                            </div>
+                                            <div class="list">
+                                                <p class="listTextLight">Package 2353 delivery to office</p>
+                                            </div>
+                                            <div class="list">
+                                                <p class="listTextLight">Kids school party</p>
+                                            </div>
+                                            <div class="list">
+                                                <p class="listText">Meeting with John</p>
+                                            </div>
+                                        </div>
+                                        <div class="col" data-id="3" id="user2">
+                                            <div class="user"><img src="onFire-master/img/Ellipse%2047.png" alt="">
+                                                <p class="name">Isabella</p>
+                                            </div>
+                                            <div class="list">
+                                                <p class="listTextLight">Kindergarden</p>
+                                                <div class="list">
+                                                    <p class="listTextLight">Kids school party</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col" data-id="4" id="user3">
+                                            <div class="user"><img src="onFire-master/img/Ellipse%2048.png" alt="">
+                                                <p class="name">Elana</p>
+                                            </div>
+                                            <div class="list">
+                                                <p class="listTextLight">School trip</p>
+                                            </div>
+                                        </div>
+                                        <div class="col" data-id="5" id="user4">
+                                            <div class="user"><img src="onFire-master/img/Ellipse%2049.png" alt="">
+                                                <p class="name">Kate</p>
+                                            </div>
+                                            <div class="allDayList">
+                                                <p>Alex Birthday</p>
+                                            </div>
+                                            <div class="list">
+                                                <p class="listTextLight">English lesson</p>
+                                            </div>
+                                            <div class="list">
+                                                <p class="listTextLight">Meeting with friends</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col" data-id="6" id="user5">
+                                            <div class="user"><img src="onFire-master/img/Ellipse%2049.png" alt="">
+                                                <p class="name">Kate</p>
+                                            </div>
+                                            <div class="allDayList">
+                                                <p>House move</p>
+                                            </div>
+                                            <div class="allDayList">
+                                                <p>Office move</p>
+                                            </div>
+                                            <div class="list">
+                                                <p class="listTextLight">Meeting with Shareholders</p>
+                                            </div>
+                                            <div class="list">
+                                                <p class="listTextLight">Lunch with Simon Sinek</p>
+                                            </div>
+                                            <div class="list">
+                                                <p class="listText">Dinner with Elon Musk</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="slideDot">
+                                    <div class="dot active"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="Redline">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide5">
+                <div class="intro habits-page">
+                    <div class="src">
+                        <header class="header">
+                            <div class="header__column">
+                                <div class="header__menu-btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                            </div>
+                            <div class="header__column">
+                                <h1 class="header__page-title">Habits</h1>
+                            </div>
+
+                            <div class="header__column">
+                                <div class="progress-bar">
+                                    <div class="progress-bar__numbers">
+                                        <span class="progress-bar__stages">7/15</span>
+                                        <span class="progress-bar__percent">48%</span>
+                                    </div>
+                                    <div class="progress-bar__line"></div>
+                                    <span class="progress-bar__title">weekly progress</span>
+                                </div>
+                            </div>
+
+                            <div class="header__column header_clock-bottom">
+                                <div class="avatar">
+                                    <div class="avatar__img avatar_bordered">
+                                        <img src="dashboard-master/app/assets/images/avatars/4.png" alt="Avatar">
+                                    </div>
+                                </div>
+                                <div class="clock">
+                                    <span>15:34</span>
+                                </div>
+                            </div>
+                        </header>
+
+                        <ul class="time-control-vert">
+                            <li class="time-control-vert__item time-control-vert__item_active">
+                                <img class="time-control-vert__icon" src="dashboard-master/app/assets/images/icons/morning.svg" alt="Morning">
+                            </li>
+                            <li class="time-control-vert__item">
+                                <img class="time-control-vert__icon" src="dashboard-master/app/assets/images/icons/afternoon.svg" alt="Afternoon">
+                            </li>
+                            <li class="time-control-vert__item">
+                                <img class="time-control-vert__icon" src="dashboard-master/app/assets/images/icons/evening.svg" alt="Evening">
+                            </li>
+                        </ul>
+
+                        <section class="time-boxes">
+                            <div class="time-box time-box_active">
+                                <div class="time-box__icon">
+                                    <img src="dashboard-master/app/assets/images/icons/morning.svg" alt="Morning">
+                                </div>
+                                <div class="time-box__content">
+                                    <h2 class="time-box__title">
+                                        Morning
+                                    </h2>
+                                    <div class="time-box__scroll">
+                                        <div class="habit">
+                                            <div class="habit__status habit__status_done"></div>
+                                            <div class="habit__info">
+                                                <h2 class="habit__title">Go for a run</h2>
+                                                <ul class="dates">
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">S</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">M</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">T</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">W</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">T</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">F</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">S</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="habit">
+                                            <div class="habit__status habit__status_done"></div>
+                                            <div class="habit__info">
+                                                <h2 class="habit__title">Do 10 pulls up</h2>
+                                                <ul class="dates">
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">S</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">M</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">T</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">W</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="habit">
+                                            <div class="habit__status"></div>
+                                            <div class="habit__info">
+                                                <h2 class="habit__title">Yoga exercise</h2>
+                                                <ul class="dates">
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">M</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">T</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">Th</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="habit">
+                                            <div class="habit__status habit__status_done"></div>
+                                            <div class="habit__info">
+                                                <h2 class="habit__title">Go for a run</h2>
+                                                <ul class="dates">
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">S</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">M</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">T</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">W</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">T</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">F</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">S</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="habit">
+                                            <div class="habit__status habit__status_done"></div>
+                                            <div class="habit__info">
+                                                <h2 class="habit__title">Do 10 pulls up</h2>
+                                                <ul class="dates">
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">S</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">M</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">T</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">W</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="habit">
+                                            <div class="habit__status habit__status "></div>
+                                            <div class="habit__info">
+                                                <h2 class="habit__title">Yoga exercise</h2>
+                                                <ul class="dates">
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">M</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">T</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">Th</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="time-box">
+                                <div class="time-box__icon">
+                                    <img src="dashboard-master/app/assets/images/icons/afternoon.svg" alt="Afternoon">
+                                </div>
+                                <div class="time-box__content">
+                                    <h2 class="time-box__title">
+                                        Afternoon
+                                    </h2>
+                                    <div class="time-box__scroll">
+                                        <div class="habit">
+                                            <div class="habit__status habit__status_done"></div>
+                                            <div class="habit__info">
+                                                <h2 class="habit__title">Go for a run</h2>
+                                                <ul class="dates">
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">S</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">M</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">T</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">W</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">T</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">F</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">S</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="habit">
+                                            <div class="habit__status habit__status_done"></div>
+                                            <div class="habit__info">
+                                                <h2 class="habit__title">Do 10 pulls up</h2>
+                                                <ul class="dates">
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">S</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">M</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">T</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">W</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="habit">
+                                            <div class="habit__status"></div>
+                                            <div class="habit__info">
+                                                <h2 class="habit__title">Yoga exercise</h2>
+                                                <ul class="dates">
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">M</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">T</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">Th</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="time-box">
+                                <div class="time-box__icon">
+                                    <img src="dashboard-master/app//assets/images/icons/evening.svg" alt="Evening">
+                                </div>
+                                <div class="time-box__content">
+                                    <h2 class="time-box__title">
+                                        Evening
+                                    </h2>
+                                    <div class="time-box__scroll">
+                                        <div class="habit">
+                                            <div class="habit__status habit__status_done"></div>
+                                            <div class="habit__info">
+                                                <h2 class="habit__title">Go for a run</h2>
+                                                <ul class="dates">
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">S</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">M</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">T</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">W</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">T</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">F</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">S</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="habit">
+                                            <div class="habit__status habit__status_done"></div>
+                                            <div class="habit__info">
+                                                <h2 class="habit__title">Do 10 pulls up</h2>
+                                                <ul class="dates">
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">S</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">M</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle"></div>
+                                                        <span class="dates__title">T</span>
+                                                    </li>
+                                                    <li class="dates__item">
+                                                        <div class="dates__circle dates__circle_active"></div>
+                                                        <span class="dates__title">W</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <ul class="screen-stagger">
+                            <li class="screen-stagger__circle"></li>
+                            <li class="screen-stagger__circle screen-stagger__circle_active"></li>
+                            <li class="screen-stagger__circle"></li>
+                            <li class="screen-stagger__circle"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide6">
+                <div class="intro">
+                    <div class="content_wrap">
+                        <div class="map_wrapper">
+                            <div id="map"></div>
+                        </div>
+                        <div class="time_mobile">
+                            <p>15:34</p>
+                        </div>
+                        <div class="family_wrap mobile">
+                            <div class="title">
+                                <p>Family</p>
+                                <span class="icon">
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="menu_location_wrap">
+
+                            <div class="menu_location">
+                                <div class="individual">
+                                    <div class="time">
+                                        <p>15:34</p>
+                                    </div>
+                                    <div id="my_place" class="avatar">
+                                        <img src="location/images/avatar.png" alt="avatar">
+                                    </div>
+                                </div>
+
+                                <div class="location_info">
+                                    <div class="city">
+                                        <p>San Francisco</p>
+                                    </div>
+                                </div>
+
+                                <div class="weather_wrap">
+                                    <div class="weather_temt">
+
+                                        <span class="weather-temperature"></span>
+                                        <i class="weather-icon wi"></i>
+                                    </div>
+
+                                    <div class="weather_wind">
+                                        <span class="weather_wind_speed"></span>
+                                        <span class="icon_wind"></span>
+                                    </div>
+
+                                </div>
+                                <!--END WEATHER WRAP-->
+
+                                <div class="family_wrap">
+                                    <div class="title">
+                                        <p>Family</p>
+                                        <span class="icon">
+                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                    <ul class="family_list">
+                                        <li id="daniel">
+                                            <!--active-->
+                                            <ul class="avatar_wrap">
+                                                <li class="avatar">
+                                                    <img src="location/images/f_avatar_1.png" alt="icon">
+                                                </li>
+                                                <li class="charge">
+                                                    <img src="location/images/battery_half.png" alt="icon">
+                                                </li>
+                                            </ul>
+                                            <ul class="person_info">
+                                                <li>
+                                                    <span class="name">Daniel</span>
+                                                    <span class="place school">School</span>
+                                                </li>
+                                                <li>
+                                                    <span class="distans">15 min</span>
+                                                    <span class="length">5 miles</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="isabella">
+                                            <ul class="avatar_wrap">
+                                                <li class="avatar">
+                                                    <img src="location/images/f_avatar_2.png" alt="icon">
+                                                </li>
+                                                <li class="charge">
+                                                    <img src="location/images/battery_half.png" alt="icon">
+                                                </li>
+                                            </ul>
+                                            <ul class="person_info">
+                                                <li>
+                                                    <span class="name">Isabella</span>
+                                                    <span class="place ">45 High street</span>
+                                                </li>
+                                                <li>
+                                                    <span class="distans">5 min</span>
+                                                    <span class="length">15 miles</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul class="avatar_wrap">
+                                                <li class="avatar">
+                                                    <img src="location/images/f_avatar_3.png" alt="icon">
+                                                </li>
+                                                <li class="charge">
+                                                    <img src="location/images/battery_half.png" alt="icon">
+                                                </li>
+                                            </ul>
+                                            <ul class="person_info">
+                                                <li>
+                                                    <span class="name">Elana</span>
+                                                    <span class="place home">Home</span>
+                                                </li>
+                                                <li>
+                                                    <span class="distans">15 min</span>
+                                                    <span class="length">3 miles</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul class="avatar_wrap">
+                                                <li class="avatar">
+                                                    <img src="location/images/f_avatar_4.png" alt="icon">
+                                                </li>
+                                                <li class="charge">
+                                                    <img src="location/images/battery_half.png" alt="icon">
+                                                </li>
+                                            </ul>
+                                            <ul class="person_info">
+                                                <li>
+                                                    <span class="name">Kate</span>
+                                                    <span class="place">412 Bloom Boulevard</span>
+                                                </li>
+                                                <li>
+                                                    <span class="distans">35 min</span>
+                                                    <span class="length">30 miles</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul class="avatar_wrap">
+                                                <li class="avatar">
+                                                    <img src="location/images/f_avatar_5.png" alt="icon">
+                                                </li>
+                                                <li class="charge">
+                                                    <img src="location/images/battery_half.png" alt="icon">
+                                                </li>
+                                            </ul>
+                                            <ul class="person_info">
+                                                <li>
+                                                    <span class="name">Alex</span>
+                                                    <span class="place home">Home</span>
+                                                </li>
+                                                <li>
+                                                    <span class="distans">15 min</span>
+                                                    <span class="length">10 miles</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="pagination">
+                                        <li><a href="#"></a></li>
+                                        <li class="active"><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <!--END MENU LOCATION-->
+
+                        </div>
+                        <!--END MENU LOC WRAP-->
+
+                        <div class="activator_menu"></div>
+
+                        <div class="menu_respond">
+                            <button type="button" class="tcon tcon-menu--xcross" aria-label="toggle menu">
+                                <span class="tcon-menu__lines" aria-hidden="true"></span>
+                                <span class="tcon-visuallyhidden">toggle menu</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/scrolloverflow.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <!--
+
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            anchors: [],
+            sectionsColor: ['#4A6FB1'],
+            scrollOverflow: true,
+            slidesNavigation: true,
+            //            controlArrows: false,
+            dragAndMove: true,
+            autoScrolling: true,
+            menu: '#menu',
+            autoplay: true,
+            afterRender: function() {
+                    setInterval(function() {
+                        $.fn.fullpage.moveSlideRight();
+                    }, 1000);
+                }
+            
+        });
+    </script>
+-->
+    <script src="location/js/transformicons.js"></script>
+    <script src="location/js/openWeather.js"></script>
+    <script src="location/js/main.js"></script>
+    <!--    <script src="dashboard-master/app/assets/js/frontend.js"></script>-->
+    <script>
+        new Sortable(sortablelist, {
+            animation: 150,
+            ghostClass: 'blue-background-class'
+        });
+
+    </script>
+    <script src="twoscreensvdots/js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                dragAndMove: true,
+                
+//                                loopBottom: true,
+//                                afterRender: function() {
+//                                setInterval(function() {
+//                                $.fn.fullpage.moveSlideRight();
+//                                }, 5000);
+//                                },
+//                                scrollOverflow: true,
+                slidesNavigation: true,
+                autoScrolling: true,
+                controlArrows: false,
+            });
+        });
+
+    </script>
+
+
+
+
+</body>
+
+</html>

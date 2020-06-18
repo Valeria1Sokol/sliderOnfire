@@ -1,0 +1,28 @@
+.habit {
+    display: flex;
+    margin-bottom: 10px;
+    &__status {
+        background-image: url('../images/icons/done-inactive.svg');
+        margin-right: 16px;
+        height: 45px;
+        width: 45px;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &_done {
+            background-image: url('../images/icons/done.svg');
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 35px;
+        margin-bottom: 19px;
+    }
+}

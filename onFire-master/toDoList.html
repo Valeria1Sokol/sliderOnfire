@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/mediaToDoList.css">
+    <script src="script/sortable.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="bottomHeader">
+                <div class="leftBox">
+                    <div class="nav">
+                        <span class='burger'></span>
+                        <span class='burger'></span>
+                        <span class='burger'></span>
+                    </div>
+                    <p class="tittle">CALENDAR</p>
+                </div>
+                <div class="rightBox">
+                    <div class="selectBox">
+                        <p class="selectText">Family</p>
+                        <svg width="42" height="25" viewBox="0 0 42 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3L20.5135 22L39 3" stroke="#091637" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                    <div class="ipadView">
+                    <div class="weatherBox">
+                        <div class="location">London</div>
+                        <div class="weather">
+                            <div class="temp">21 <span>o</span></div>
+                            <div class="tempImg"><img src="img/Vector.png" alt=""></div>
+                            <div class="atmos">4 mph</div>
+                            <div class="atmosImg"><img src="img/atmospheric%201.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="userBox">
+                        <div class="time">11:34</div>
+                        <div class="user"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="topHeader">
+                <p class="date">July 13, Tuesday</p>
+            </div>
+        </header>
+        <div class="content">
+            <div class="grid">
+                <div class="timeBox">
+                    <p class="tittleTime">All-day</p>
+                    <p class="lightTime time">7:00</p>
+                    <p class="lightTime time">8:00</p>
+                    <p class="lightTime time">9:00</p>
+                    <p class="lightTime time">10:00</p>
+                    <p class="lightTime time">11:00</p>
+                    <p class="time">12:00</p>
+                    <p class="time">13:00</p>
+                    <p class="time">14:00</p>
+                    <p class="time">15:00</p>
+                    <p class="time">16:00</p>
+                    <p class="time">17:00</p>
+                    <p class="time">18:00</p>
+                    <p class="time">19:00</p>
+                </div>
+
+                <div class="toDoList" id="sortablelist" data-id="1">
+                    <div class="col" data-id="2" id="user1">
+                        <div class="user"><img src="img/Ellipse%2046.png" alt="">
+                            <p class="name">Daniel</p>
+                        </div>
+                        <div class="allDayList">
+                            <p>Renew OnFire subscription</p>
+                        </div>
+                        <div class="list">
+                            <p class="listTextLight">Package 2353 delivery to office</p>
+                        </div>
+                        <div class="list">
+                            <p class="listTextLight">Kids school party</p>
+                        </div>
+                        <div class="list">
+                            <p class="listText">Meeting with John</p>
+                        </div>
+                    </div>
+                    <div class="col" data-id="3" id="user2">
+                        <div class="user"><img src="img/Ellipse%2047.png" alt="">
+                            <p class="name">Isabella</p>
+                        </div>
+                        <div class="list">
+                            <p class="listTextLight">Kindergarden</p>
+                            <div class="list">
+                                <p class="listTextLight">Kids school party</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col" data-id="4" id="user3">
+                        <div class="user"><img src="img/Ellipse%2048.png" alt="">
+                            <p class="name">Elana</p>
+                        </div>
+                        <div class="list">
+                            <p class="listTextLight">School trip</p>
+                        </div>
+                    </div>
+                    <div class="col" data-id="5" id="user4">
+                        <div class="user"><img src="img/Ellipse%2049.png" alt="">
+                            <p class="name">Kate</p>
+                        </div>
+                        <div class="allDayList">
+                            <p>Alex Birthday</p>
+                        </div>
+                        <div class="list">
+                            <p class="listTextLight">English lesson</p>
+                        </div>
+                        <div class="list">
+                            <p class="listTextLight">Meeting with friends</p>
+                        </div>
+                    </div>
+
+                    <div class="col" data-id="6" id="user5">
+                        <div class="user"><img src="img/Ellipse%2049.png" alt="">
+                            <p class="name">Kate</p>
+                        </div>
+                        <div class="allDayList">
+                            <p>House move</p>
+                        </div>
+                        <div class="allDayList">
+                            <p>Office move</p>
+                        </div>
+                        <div class="list">
+                            <p class="listTextLight">Meeting with Shareholders</p>
+                        </div>
+                        <div class="list">
+                            <p class="listTextLight">Lunch with Simon Sinek</p>
+                        </div>
+                        <div class="list">
+                            <p class="listText">Dinner with Elon Musk</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slideDot">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="Redline">
+        <div class="circle"></div>
+    </div>
+
+    <script>
+        new Sortable(sortablelist, {
+            animation: 150,
+            ghostClass: 'blue-background-class'
+        });
+    </script>
+
+</body></html>

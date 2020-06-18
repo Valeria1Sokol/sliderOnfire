@@ -1,0 +1,22 @@
+.screen-stagger {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 28px;
+    z-index: 995;
+    &__circle {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        background: #646464;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        border-radius: 50%;
+        &:not(:last-child){
+            margin-right: 18px;
+        }
+        &_active {
+            background: #FFFFFF;
+        }
+    }
+}

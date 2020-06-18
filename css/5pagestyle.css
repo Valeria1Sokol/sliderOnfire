@@ -1,0 +1,1067 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Thin'), local('BebasNeue-Thin'), url('../fonts/BebasNeue/bebasneuethin.woff2') format('woff2'), url('../fonts/BebasNeue/bebasneuethin.woff') format('woff'), url('../fonts/BebasNeue/bebasneuethin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Light'), local('BebasNeue-Light'), url('../fonts/BebasNeue/bebasneuelight.woff2') format('woff2'), url('../fonts/BebasNeue/bebasneuelight.woff') format('woff'), url('../fonts/BebasNeue/bebasneuelight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Book'), local('BebasNeueBook'), url('../fonts/BebasNeue/bebasneuebook.woff2') format('woff2'), url('../fonts/BebasNeue/bebasneuebook.woff') format('woff'), url('../fonts/BebasNeue/bebasneuebook.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('../fonts/BebasNeue/bebasneueregular.woff2') format('woff2'), url('../fonts/BebasNeue/bebasneueregular.woff') format('woff'), url('../fonts/BebasNeue/bebasneueregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('../fonts/BebasNeue/bebasneuebold.woff2') format('woff2'), url('../fonts/BebasNeue/bebasneuebold.woff') format('woff'), url('../fonts/BebasNeue/bebasneuebold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+/*// Quicksand*/
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/BebasNeue/Quicksand/QuicksandBold.otf') format('OpenType');
+    src: local('QuicksandBold'), local('QuicksandBold');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/BebasNeue/Quicksand/QuicksandBoldItalic.otf') format('OpenType');
+    src: local('QuicksandBoldItalic'), local('QuicksandBoldItalic');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/BebasNeue/Quicksand/QuicksandItalic.otf') format('OpenType');
+    src: local('QuicksandItalic'), local('QuicksandItalic');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/BebasNeue/Quicksand/QuicksandLight.otf') format('OpenType');
+    src: local('QuicksandLight'), local('QuicksandLight');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/BebasNeue/Quicksand/QuicksandLightItalic.otf') format('OpenType');
+    src: local('QuicksandLightItalic'), local('QuicksandLightItalic');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/BebasNeue/Quicksand/QuicksandRegular.otf') format('OpenType');
+    src: local('QuicksandRegular'), local('QuicksandRegular');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 5% 15% 65% 10%;
+    align-items: center;
+    padding-left: 77px;
+    padding-top: 42px;
+    position: relative;
+}
+
+.header__column {
+    align-items: center;
+}
+
+.header__column:nth-of-type(4) {
+    justify-self: flex-end;
+}
+
+.header__menu-btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.header__menu-btn span {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+}
+
+.header__menu-btn span:not(:last-of-type) {
+    margin-bottom: 7px;
+}
+
+.header_clock-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header_clock-bottom .clock {
+    margin-top: 15px;
+}
+
+.header__page-title {
+    font-size: 50px;
+    line-height: 58px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 100;
+}
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+    .header__menu-btn span {
+        width: 60px;
+        height: 4px;
+    }
+
+    .header__menu-btn span:not(:last-of-type) {
+        margin-bottom: 15px;
+    }
+
+    .header_clock-bottom .clock {
+        margin-top: 30px;
+    }
+
+    .header__page-title {
+        font-size: 100px;
+        line-height: 116px;
+    }
+}
+
+.avatar__img {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border: 3px solid #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.avatar__img img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.avatar__name {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    display: inline-block;
+    margin: 5px auto 0;
+}
+
+.avatar_bordered {
+    border: 5px solid #fff;
+}
+
+.avatar_selected .avatar__img {
+    border: 5px solid #fff;
+}
+
+.avatar_selected .avatar__img::before {
+    content: '';
+    background: rgba(19, 34, 67, .7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.avatar_selected .avatar__img::after {
+    content: '';
+    background: url('../dashboard-master/app/assets/images/icons/done-white.svg');
+    background-size: cover;
+    width: 65px;
+    height: 50px;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    z-index: 2;
+}
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+    .avatar__img {
+        width: 128px;
+        height: 128px;
+        border: 7px solid #fff;
+    }
+
+    .avatar__name {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 80px;
+        line-height: 93px;
+    }
+
+    .avatar_bordered {
+        border: 10px solid #fff;
+    }
+
+    .avatar_selected .avatar__img {
+        border: 10px solid #fff;
+    }
+
+    .avatar_selected .avatar__img::after {
+        content: '';
+        background: url('../dashboard-master/app/assets/images/icons/done-white.svg');
+        background-size: cover;
+        width: 130px;
+        height: 100px;
+        position: absolute;
+        top: 35%;
+        left: 30%;
+        z-index: 2;
+    }
+}
+
+.clock span {
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+
+}
+
+.progress-bar__numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 9px;
+}
+
+.progress-bar__percent,
+.progress-bar__stages {
+    font-size: 25px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.progress-bar__title {
+    display: inline-block;
+    opacity: 0.5;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 5px;
+}
+
+.progress-bar__line {
+    background: #258477;
+    border-radius: 63px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    width: 100%;
+    height: 3px;
+    position: relative;
+}
+
+.progress-bar__line::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 48%;
+    height: 3px;
+    background: #00ff19;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 63px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+    .progress-bar__numbers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 18px;
+    }
+
+    .progress-bar__percent,
+    .progress-bar__stages {
+        font-size: 50px;
+        line-height: 60px;
+        display: inline-block;
+    }
+
+    .progress-bar__title {
+        font-size: 50px;
+        line-height: 60px;
+        margin-top: 10px;
+    }
+
+    .progress-bar__line {
+        width: 100%;
+        height: 7px;
+        position: relative;
+    }
+
+    .progress-bar__line::after {
+        width: 48%;
+        height: 7px;
+    }
+}
+
+.screen-stagger {
+    display: none;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 28px;
+    z-index: 995;
+}
+
+.screen-stagger__circle {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    background: #646464;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    border-radius: 50%;
+}
+
+.screen-stagger__circle:not(:last-child) {
+    margin-right: 18px;
+}
+
+.screen-stagger__circle_active {
+    background: #fff;
+}
+
+.dates {
+    display: flex;
+    align-items: center;
+}
+
+.dates__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dates__item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.dates__circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #164a4a;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.dates__circle_active {
+    background: #00a662;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.dates__title {
+    font-size: 15px;
+    line-height: 35px;
+}
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+    .dates__item:not(:last-child) {
+        margin-right: 32px;
+    }
+
+    .dates__circle {
+        width: 32px;
+        height: 32px;
+    }
+
+    .dates__title {
+        font-size: 30px;
+        line-height: 70px;
+    }
+}
+
+.habit {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.habit__status {
+    background-image: url('../dashboard-master/app/assets/images/icons/done-inactive.svg');
+    margin-right: 16px;
+    height: 45px;
+    width: 45px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.habit__status_done {
+    background-image: url('../dashboard-master/app/assets/images/icons/done.svg');
+}
+
+.habit__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.habit__title {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 19px;
+}
+
+.habits-page {
+    background: #002b2e;
+}
+
+.habits-page::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    width: 100vw;
+    content: '';
+    display: block;
+    background-image: url('../dashboard-master/app/assets/images/bg/habits-bg.png');
+    height: 35vh;
+}
+
+.habits-page .time-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+}
+
+.habits-page .time-box {
+    opacity: 0.5;
+}
+
+.habits-page .time-box__icon {
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.habits-page .time-box__icon img {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.habits-page .time-box__scroll {
+    overflow-y: scroll;
+    padding: 0 71px;
+    height: 65vh;
+}
+
+.habits-page .time-box__title {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 11px;
+}
+
+.habits-page .time-box_active {
+    opacity: 1;
+}
+
+.habits-page .time-box_active .time-box__content {
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    background: rgba(0, 0, 0, .3);
+    box-sizing: border-box;
+}
+
+.habits-page .time-control-vert {
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+    .habits-page .header {
+        grid-template-columns: 10% 24% 40% 20%;
+    }
+
+    .habits-page .time-boxes {
+        display: grid;
+        grid-template-columns: 100% 100% 100%;
+        column-gap: 48px;
+    }
+
+    .habits-page .time-box {
+        display: none;
+    }
+
+    .habits-page .time-box__icon {
+        text-align: center;
+        padding-bottom: 8px;
+        display: none;
+    }
+
+    .habits-page .time-box__icon img {
+        width: 98px;
+    }
+
+    .habits-page .time-box__scroll {
+        padding: 0 64px;
+        height: 70vh;
+    }
+
+    .habits-page .time-box__title {
+        display: none;
+    }
+
+    .habits-page .time-box_active {
+        display: block;
+    }
+
+    .habits-page .time-box_active .time-box__content {
+        border-radius: 0;
+        border: none;
+        background: none;
+        box-sizing: border-box;
+    }
+
+    .habits-page .clock {
+        order: -1;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .habits-page .habit {
+        margin-bottom: 40px;
+    }
+
+    .habits-page .habit__status {
+        margin-right: 47px;
+        width: 86px;
+        height: 70px;
+    }
+
+    .habits-page .habit__title {
+        font-size: 60px;
+        line-height: 70px;
+        margin-bottom: 19px;
+    }
+
+    .habits-page .time-control-vert {
+        display: flex;
+        margin-bottom: 73px;
+        margin-top: 34px;
+        justify-content: center;
+    }
+
+    .habits-page .time-control-vert__item {
+        position: relative;
+        cursor: pointer;
+        opacity: 0.5;
+    }
+
+    .habits-page .time-control-vert__item:not(:last-child) {
+        margin-right: 76px;
+    }
+
+    .habits-page .time-control-vert__item_active {
+        opacity: 1;
+    }
+
+    .habits-page .time-control-vert__item_active::after {
+        content: '';
+        display: block;
+        background: #ffce54;
+        width: 100%;
+        height: 6px;
+        position: absolute;
+        bottom: -13px;
+    }
+
+    .habits-page .progress-bar__percent {
+        justify-self: end;
+    }
+}
+
+.btn {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #fff;
+    padding: 22px 115px 17px 115px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    min-width: 380px;
+}
+
+.btn-outline {
+    border: 3px solid #00a662;
+}
+
+.btn-green {
+    background: #00a662;
+    box-shadow: 10px 30px 100px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.prev-btn {
+    background: url('../dashboard-master/app/assets/images/icons/chooser-arrow.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.habit-page .header {
+    grid-template-columns: 5% 5% 75% 10%;
+}
+
+.habit-page .header__page-title {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 35px;
+    text-transform: none;
+}
+
+.habit-page .progress-bar {
+    padding: 0 133px;
+}
+
+.habit-page .day-title {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.habit-control {
+    margin-top: 15px;
+    padding: 0 128px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 90px;
+}
+
+.habit-control .calendar {
+    padding-top: 40px;
+}
+
+.habit-control .calendar__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.habit-control .calendar__title {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.habit-control .calendar__btn {
+    width: 40px;
+    height: 40px;
+    background: #164a4a;
+    border-radius: 4px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    color: #00a662;
+}
+
+.habit-control .calendar__btn img {
+    width: 10px;
+    height: 17px;
+    display: inline-block;
+}
+
+.habit-control .calendar__btn-next img {
+    transform: rotateZ(180deg);
+}
+
+.habit-control .calendar__weeks {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    grid-gap: 30px;
+    margin-bottom: 40px;
+}
+
+.habit-control .calendar__weeks__item {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    color: rgba(255, 255, 255, .4);
+}
+
+.habit-control .calendar__weeks__item_active {
+    color: rgba(255, 255, 255, 1);
+}
+
+.habit-control .calendar__days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    justify-items: center;
+    grid-gap: 30px;
+}
+
+.habit-control .calendar__days__item {
+    position: relative;
+}
+
+.habit-control .calendar__days__item::after {
+    content: '';
+    display: block;
+    width: 31px;
+    height: 31px;
+    border: 3px solid #164a4a;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.habit-control .calendar__days_done::after {
+    border: none;
+    background-image: url('../dashboard-master/app/assets/images/icons/done.svg');
+    background-image: url('../dashboard-master/app/assets/images/icons/done.svg');
+    height: 45px;
+    width: 45px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.habit-control .calendar__days_fail {
+    width: 50px;
+    height: 50px;
+}
+
+.habit-control .calendar__days_fail::before,
+.habit-control .calendar__days_fail::after {
+    content: '';
+    display: block;
+    height: 45px;
+    width: 6px;
+    background: #164a4a;
+    position: absolute;
+    border-radius: 10px;
+    left: 25%;
+}
+
+.habit-control .calendar__days_fail::before {
+    transform: rotateZ(45deg);
+}
+
+.habit-control .calendar__days_fail::after {
+    border: none;
+    transform: rotateZ(-45deg);
+}
+
+.habit-control .calendar__days_off::after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 6px;
+    background: #164a4a;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: 25%;
+}
+
+.habit-control .calendar__days_current {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background: #00a662;
+    border-radius: 10px;
+    color: #fff;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.habit-control .calendar__days_current::after {
+    display: none;
+}
+
+.habit-control__video-box {
+    position: relative;
+}
+
+.habit-control__video-box #video-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -1px;
+    border-radius: 9px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.habit-control__video-box #video-cover::before {
+    content: '';
+    background: url(../dashboard-master/app/assets/images/icons/video-btn.svg);
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+    left: 30%;
+    background-position: center center;
+    background-size: 250px 250px;
+    height: 250px;
+    display: block;
+    width: 250px;
+}
+
+.habit-control__info {
+    padding: 29px 38px 18px 38px;
+    background: rgba(22, 74, 74, .3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.habit-control__info__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.habit-control__info__item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.habit-control__info__title {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.habit-control__info__param {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 1, 0, );
+}
+
+.habit-control__info__value {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 0.02em;
+    color: #00a662;
+    text-align: right;
+}
+
+.habit-control__footer {
+    width: 85%;
+    margin: 25px auto 0;
+    position: relative;
+}
+
+.habit-control__footer__title {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, .5);
+    padding-left: 45px;
+    margin-bottom: 22px;
+    position: absolute;
+    top: -40px;
+}
+
+.habit-control__footer__bottom {
+    height: 62px;
+    background: #073436;
+    border-radius: 10px;
+    display: flex;
+    padding: 0 42px;
+}
+
+.habit-control__footer__bottom .day-title {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    width: 20%;
+}
+
+.habit-control__footer__bottom .times {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.habit-control__footer__bottom .times__item {
+    display: flex;
+    align-items: center;
+}
+
+.habit-control__footer__bottom .times__title {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 29px;
+    color: rgba(0, 1, 0, );
+}
+
+.habit-control__footer__bottom .times__status {
+    margin-left: 20px;
+}
+
+.habit-control__footer__bottom .times__status_done {
+    width: 24px;
+    height: 24px;
+    background-image: url('../dashboard-master/app/assets/images/icons/done.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.habit-control__footer__bottom .times__status_progress {
+    width: 31px;
+    height: 31px;
+    border: 3px solid rgba(255, 255, 255, .5);
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.habit-buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+
+.habit-buttons .btn {
+    margin-right: 50px;
+}
+
+.habit-video-popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 123;
+    display: none;
+    align-items: center;
+}
+
+.habit-video-popup .video-js {
+    position: relative;
+    z-index: 99;
+}
+
+.habit-video-popup::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.habits-page {
+    color: white;
+    position: relative;
+}
+
+.habit-page:before,
+.habits-page:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    width: 100vw;
+    content: "";
+    display: block;
+    background-image: url("../dashboard-master/app/assets/images/bg/habits-bg.png");
+    height: 35vh;
+}
+@media all and (max-width:1024px)
+{
+    .progress-bar
+    {
+        margin: 0 auto 0 7vw;
+        width: 85%;
+    }
+}

@@ -1,0 +1,170 @@
+//= template/header.html
+
+<body class="habit-page">
+    <header class="header">
+        <div class="header__column">
+            //= template/prev-btn.html
+        </div>
+        <div class="header__column">
+            <div class="header__menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+        <div class="header__column">
+            <h1 class="header__page-title">Face fitness</h1>
+        </div>
+
+
+        <div class="header__column header_clock-bottom">
+            //= template/avatar.html
+            //= template/clock.html
+        </div>
+    </header>
+
+    //= template/progress-bar.html
+
+    <section class="habit-control">
+        <div class="section__column">
+            <div class="calendar">
+                <div class="calendar__header">
+                    <button class="calendar__btn calendar__btn-prev">
+                     <img src="./assets/images/icons/arrow-green.svg">
+                    </button>
+                    <h3 class="calendar__title">July, 2020</h3>
+                    <button class="calendar__btn calendar__btn-next">
+                        <img src="./assets/images/icons/arrow-green.svg">
+                    </button>
+                </div>
+                    <ul class="calendar__weeks">
+                        <li class="calendar__weeks__item">Mon</li>
+                        <li class="calendar__weeks__item calendar__weeks__item_active">Tue</li>
+                        <li class="calendar__weeks__item">Wed</li>
+                        <li class="calendar__weeks__item">Thu</li>
+                        <li class="calendar__weeks__item">Fri</li>
+                        <li class="calendar__weeks__item">Sat</li>
+                        <li class="calendar__weeks__item">Sun</li>
+                    </ul>
+                    <ul class="calendar__days">
+                        <li class="calendar__days__item calendar__days_done"></li>
+                        <li class="calendar__days__item calendar__days_done"></li>
+                        <li class="calendar__days__item calendar__days_done"></li>
+                        <li class="calendar__days__item calendar__days_fail"></li>
+                        <li class="calendar__days__item calendar__days_done"></li>
+                        <li class="calendar__days__item calendar__days_off"></li>
+                        <li class="calendar__days__item calendar__days_off"></li>
+                       
+                        <li class="calendar__days__item calendar__days_done"></li>
+                        <li class="calendar__days__item calendar__days_done"></li>
+                        <li class="calendar__days__item calendar__days_done"></li>
+                        <li class="calendar__days__item calendar__days_fail"></li>
+                        <li class="calendar__days__item calendar__days_done"></li>
+                        <li class="calendar__days__item calendar__days_off"></li>
+                       
+                        <li class="calendar__days__item calendar__days_off"></li>
+                        <li class="calendar__days__item calendar__days_current">21</li>
+                        <li class="calendar__days__item calendar__days_done"></li>
+                        <li class="calendar__days__item calendar__days_done"></li>
+                        <li class="calendar__days__item calendar__days_fail"></li>
+                        <li class="calendar__days__item calendar__days_done"></li>
+                        <li class="calendar__days__item calendar__days_off"></li>
+                        <li class="calendar__days__item calendar__days_off"></li>
+                      
+                        <li class="calendar__days__item"></li>
+                        <li class="calendar__days__item"></li>
+                        <li class="calendar__days__item"></li>
+                        <li class="calendar__days__item"></li>
+                        <li class="calendar__days__item"></li>
+                        <li class="calendar__days__item calendar__days_off"></li>
+                        <li class="calendar__days__item calendar__days_off"></li>
+                    </ul>
+             
+            </div>
+        </div>
+        <div class="section__column">
+            <div class="habit-control__info">
+                <h3 class="habit-control__info__title">
+                    Info:
+                </h3>
+                <ul>
+                    <li class="habit-control__info__item">
+                        <span class="habit-control__info__param">
+                            Repetition pattern:
+                        </span>
+    
+                        <span class="habit-control__info__value">
+                            M T W Th F
+                        </span>
+                    </li>
+                    <li class="habit-control__info__item">
+                        <span class="habit-control__info__param">
+                            Repetition goal:
+                        </span>
+                        <span class="habit-control__info__value">
+                            28
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="habit-video-popup">
+                <div class="habit-control__video-box">
+                    <!-- <div id="video-cover"></div> -->
+                    <video
+                    id="video-player-popup"
+                    class="video-js vjs-forest-skin"
+                    width="1369" height="698"
+                    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=gLDiQFYZC6o"}], "youtube": { "ytControls": 0 }}'
+                  >
+                  </video>
+                </div>
+            </div>
+            <div class="habit-control__video-box">
+                <div id="video-cover"></div>
+                 <!--<iframe width="100%" height="350" src="https://www.youtube.com/embed/gLDiQFYZC6o?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                <video
+                id="video-player"
+                class="video-js vjs-forest-skin"
+                width="630" height="350"
+                data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=gLDiQFYZC6o"}], "youtube": { "ytControls": 0 }}'
+              >
+              </video>
+            </div>
+        </div>
+    </section>
+    <div class="habit-control__footer">
+        <div class="habit-control__footer__title">
+            TODAY
+        </div>
+        <div class="habit-control__footer__bottom">
+            <div class="day-title">
+                July 27, Tuesday
+            </div>
+            <ul class="times">
+                <li class="times__item">
+                    <span class="times__title">Morning</span>
+                    <div class="times__status times__status_done"></div>
+                </li>
+                <li class="times__item">
+                    <span class="times__title">Aftermoon</span>
+                    <div class="times__status times__status_done"></div>
+                </li>
+                <li class="times__item">
+                    <span class="times__title">Evening</span>
+                    <div class="times__status times__status_progress"></div>
+                </li>
+            </ul>
+        </div>
+    </>
+
+    <div class="habit-buttons">
+        <a href="#" class="btn btn-outline js-start-lesson" data-time="51000">Start</a>
+        <a href="#" class="btn btn-green js-complete-lesson">complete</a>
+    </div>
+
+
+    //= template/screen-stagger.html
+
+
+    //= template/footer.html
