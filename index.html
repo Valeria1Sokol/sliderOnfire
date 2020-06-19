@@ -1570,34 +1570,29 @@
             animation: 150,
             ghostClass: 'blue-background-class'
         });
-
     </script>
     <script src="twoscreensvdots/js/script.js"></script>
     <script>
         $(document).ready(function() {
 
-                $('#fullpage').fullpage({
-//                    dragAndMove: false,
+            $('#fullpage').fullpage({
+                dragAndMove: true,
+                loopBottom: true,
+                //                                afterRender: function() {
+                //                                setInterval(function() {
+                //                                $.fn.fullpage.moveSlideRight();
+                //                                }, 5000);
+                //                                },
+                scrollOverflow: true,
+                slidesNavigation: true,
+                autoScrolling: false,
+                controlArrows: false,
+            });
 
-                    //                                loopBottom: true,
-                    //                                afterRender: function() {
-                    //                                setInterval(function() {
-                    //                                $.fn.fullpage.moveSlideRight();
-                    //                                }, 5000);
-                    //                                },
-//                    scrollOverflow: false,
-                    slidesNavigation: true,
-                    autoScrolling: false,
-                    controlArrows: false,
-                });
-            
         });
-
     </script>
 
 
 
 
-</body>
-
-</html>
+</body></html>

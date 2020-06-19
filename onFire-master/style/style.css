@@ -263,7 +263,7 @@
 .container .content .toDoList {
     display: flex;
     flex-direction: row;
-/*    overflow-x: scroll;*/
+    overflow-x: scroll;
     white-space: nowrap;
     width: auto;
     margin: 0 1vw 0 0.3vw;
