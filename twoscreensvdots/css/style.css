@@ -1054,6 +1054,7 @@ h2.header__title {
 
     .first__screen {
         padding-top: 150px;
+        overflow-y: scroll;
     }
 
     .task__block {

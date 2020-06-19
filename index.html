@@ -1576,14 +1576,14 @@
         $(document).ready(function() {
 
             $('#fullpage').fullpage({
-                dragAndMove: true,
+//                dragAndMove: true,
                 loopBottom: true,
-                //                                afterRender: function() {
-                //                                setInterval(function() {
-                //                                $.fn.fullpage.moveSlideRight();
-                //                                }, 5000);
-                //                                },
-                scrollOverflow: true,
+                                                afterRender: function() {
+                                                setInterval(function() {
+                                                $.fn.fullpage.moveSlideRight();
+                                                }, 5000);
+                                                },
+                scrollOverflow: false,
                 slidesNavigation: true,
                 autoScrolling: false,
                 controlArrows: false,
