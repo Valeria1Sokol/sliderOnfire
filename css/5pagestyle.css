@@ -132,12 +132,26 @@
 }
 
 .header__page-title {
+    /*
     font-size: 50px;
     line-height: 58px;
+*/
     text-transform: uppercase;
     font-style: normal;
     font-weight: 100;
+    font-family: 'BebasNeue-Thin';
+    font-size: 3.67vw;
+    line-height: 4.3vw;
+    color: #FFFFFF;
 }
+
+@media (max-width: 1024px) {
+    .header__page-title {
+        font-size: 4.9vw;
+        line-height: 4.9vw;
+    }
+}
+
 
 @media only screen and (min-width: 1024px) and (orientation: portrait) {
     .header__menu-btn span {
@@ -1041,7 +1055,10 @@ button {
     color: white;
     position: relative;
 }
-
+#slide1>.b
+{
+    display: none;
+}
 .habit-page:before,
 .habits-page:before {
     position: absolute;
@@ -1064,9 +1081,11 @@ button {
     .habits-page .time-boxes {
         overflow-x: scroll;
     }
+/*
 
     .progress-bar {
         margin: 0 auto 0 7vw;
         width: 85%;
     }
+*/
 }

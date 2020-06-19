@@ -318,6 +318,7 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="b">hello</div>
                 </div>
             </div>
 
@@ -1570,19 +1571,20 @@
             animation: 150,
             ghostClass: 'blue-background-class'
         });
+
     </script>
     <script src="twoscreensvdots/js/script.js"></script>
     <script>
         $(document).ready(function() {
 
             $('#fullpage').fullpage({
-//                dragAndMove: true,
+                //                dragAndMove: true,
                 loopBottom: true,
-                                                afterRender: function() {
-                                                setInterval(function() {
-                                                $.fn.fullpage.moveSlideRight();
-                                                }, 10000);
-                                                },
+                afterRender: function() {
+                    setInterval(function() {
+                        $.fn.fullpage.moveSlideRight();
+                    }, 10000);
+                },
                 scrollOverflow: false,
                 slidesNavigation: true,
                 autoScrolling: false,
@@ -1590,9 +1592,22 @@
             });
 
         });
+
     </script>
 
 
 
+    <script>
+        //        $('.profile__image').click(function() {
+        //            $('#slide1 .src').css({
+        //                display: 'none'
+        //            })
+        //            $('#slide1>.b').css({
+        //                display: 'block'
+        //            })
+        //        })
 
-</body></html>
+    </script>
+</body>
+
+</html>

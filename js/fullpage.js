@@ -4199,3 +4199,11 @@ if(window.jQuery && window.fullpage){
         };
     })(window.jQuery, window.fullpage);
 }
+$('.weather__temp').click(function(){
+    $('#slide1>.src').css({
+        display:'none'
+    })
+     $('#slide1>.b').css({
+        display:'block'
+    })
+})
