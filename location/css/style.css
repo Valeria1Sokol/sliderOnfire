@@ -250,7 +250,7 @@ section {
     opacity: 0;
     visibility: hidden;
     top: 0;
-/*    width: 25.4105%;*/
+    /*    width: 25.4105%;*/
     width: 26vw;
     min-width: 320px;
     background: #091637;
@@ -277,8 +277,9 @@ section {
     height: 100%;
     overflow-y: scroll;
 }
-.mapboxgl-ctrl-attrib-inner, .mapboxgl-control-container
-{
+
+.mapboxgl-ctrl-attrib-inner,
+.mapboxgl-control-container {
     display: none;
 }
 
@@ -1098,14 +1099,14 @@ section {
         height: 35px;
         right: 0;
         left: 0;
-        bottom: 30px;
+        bottom: 83px;
         top: auto;
     }
 
     .menu_location_wrap {
         top: 100%;
         right: 0;
-/*
+        /*
         left: 0;
         right: 0;
 */
@@ -1122,7 +1123,7 @@ section {
 
     .menu_location_wrap.open {
         top: 49.4%;
-/*
+        /*
         left: 0;
         right: 0;
 */
