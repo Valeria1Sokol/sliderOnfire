@@ -143,7 +143,7 @@
             scrollOverflowReset: false,
             scrollOverflowHandler: window.fp_scrolloverflow ? window.fp_scrolloverflow.iscrollHandler : null,
             scrollOverflowOptions: null,
-            touchSensitivity: 5,
+            touchSensitivity: 500,
             touchWrapper: typeof containerSelector === 'string' ? $(containerSelector)[0] : containerSelector,
             bigSectionsDestination: null,
 
