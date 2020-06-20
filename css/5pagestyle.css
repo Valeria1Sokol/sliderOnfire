@@ -1,90 +1,20 @@
-@font-face {
-    font-family: 'Bebas Neue';
-    src: local('Bebas Neue Thin'), local('BebasNeue-Thin'), url('../fonts/BebasNeue/bebasneuethin.woff2') format('woff2'), url('../fonts/BebasNeue/bebasneuethin.woff') format('woff'), url('../fonts/BebasNeue/bebasneuethin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
+body {
+    margin: 0;
 }
 
-@font-face {
-    font-family: 'Bebas Neue';
-    src: local('Bebas Neue Light'), local('BebasNeue-Light'), url('../fonts/BebasNeue/bebasneuelight.woff2') format('woff2'), url('../fonts/BebasNeue/bebasneuelight.woff') format('woff'), url('../fonts/BebasNeue/bebasneuelight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
+.habit-page,
+.habits-page {
+    color: white;
+    font-family: 'BebasNeue-Regular';
+    background: #002b2e;
 }
 
-@font-face {
-    font-family: 'Bebas Neue';
-    src: local('Bebas Neue Book'), local('BebasNeueBook'), url('../fonts/BebasNeue/bebasneuebook.woff2') format('woff2'), url('../fonts/BebasNeue/bebasneuebook.woff') format('woff'), url('../fonts/BebasNeue/bebasneuebook.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+.habit-page {
+    display: none;
 }
 
-@font-face {
-    font-family: 'Bebas Neue';
-    src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('../fonts/BebasNeue/bebasneueregular.woff2') format('woff2'), url('../fonts/BebasNeue/bebasneueregular.woff') format('woff'), url('../fonts/BebasNeue/bebasneueregular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Bebas Neue';
-    src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('../fonts/BebasNeue/bebasneuebold.woff2') format('woff2'), url('../fonts/BebasNeue/bebasneuebold.woff') format('woff'), url('../fonts/BebasNeue/bebasneuebold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-
-
-
-/*// Quicksand*/
-
-@font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/BebasNeue/Quicksand/QuicksandBold.otf') format('OpenType');
-    src: local('QuicksandBold'), local('QuicksandBold');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/BebasNeue/Quicksand/QuicksandBoldItalic.otf') format('OpenType');
-    src: local('QuicksandBoldItalic'), local('QuicksandBoldItalic');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/BebasNeue/Quicksand/QuicksandItalic.otf') format('OpenType');
-    src: local('QuicksandItalic'), local('QuicksandItalic');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/BebasNeue/Quicksand/QuicksandLight.otf') format('OpenType');
-    src: local('QuicksandLight'), local('QuicksandLight');
-    font-weight: 300;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/BebasNeue/Quicksand/QuicksandLightItalic.otf') format('OpenType');
-    src: local('QuicksandLightItalic'), local('QuicksandLightItalic');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Quicksand';
-    src: url('../fonts/BebasNeue/Quicksand/QuicksandRegular.otf') format('OpenType');
-    src: local('QuicksandRegular'), local('QuicksandRegular');
-    font-weight: normal;
-    font-style: normal;
+.habit-page {
+    padding: 0 0 50px;
 }
 
 .header {
@@ -131,6 +61,10 @@
     margin-top: 15px;
 }
 
+video::-webkit-media-controls {
+    display: none !important;
+}
+
 .header__page-title {
     /*
     font-size: 50px;
@@ -143,6 +77,7 @@
     font-size: 3.67vw;
     line-height: 4.3vw;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 @media (max-width: 1024px) {
@@ -192,7 +127,7 @@
 }
 
 .avatar__name {
-    font-family: Quicksand;
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -239,7 +174,7 @@
     }
 
     .avatar__name {
-        font-family: Quicksand;
+        font-family: 'Quicksand';
         font-style: normal;
         font-weight: normal;
         font-size: 80px;
@@ -278,6 +213,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 9px;
+    position: relative;
 }
 
 .progress-bar__percent,
@@ -293,6 +229,7 @@
     font-size: 25px;
     line-height: 30px;
     margin-top: 5px;
+    font-family: 'BebasNeue-Bold';
 }
 
 .progress-bar__line {
@@ -504,7 +441,7 @@
 }
 
 .habits-page .time-box__title {
-    font-family: Quicksand;
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: 300;
     font-size: 40px;
@@ -633,9 +570,7 @@
 }
 
 .btn {
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: bold;
+    font-family: 'BebasNeue-Bold';
     font-size: 40px;
     text-align: center;
     letter-spacing: 0.02em;
@@ -644,6 +579,7 @@
     border-radius: 100px;
     box-sizing: border-box;
     min-width: 380px;
+    text-decoration: none;
 }
 
 .btn-outline {
@@ -675,7 +611,7 @@ button {
 }
 
 .habit-page .header__page-title {
-    font-family: Quicksand;
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: normal;
     font-size: 35px;
@@ -683,12 +619,19 @@ button {
     text-transform: none;
 }
 
+@media all and (max-width:1024px) {
+    .habit-page .header__page-title {
+        width: fit-content;
+        margin: 0 auto 0 3vw;
+    }
+}
+
 .habit-page .progress-bar {
     padding: 0 133px;
 }
 
 .habit-page .day-title {
-    font-family: Bebas Neue;
+    font-family: 'BebasNeue-Regular';
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -698,11 +641,22 @@ button {
 }
 
 .habit-control {
-    margin-top: 15px;
+    /*    margin-top: 15px;*/
     padding: 0 128px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 90px;
+}
+
+@media all and (max-width:1024px) {
+    .habit-control {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+    }
+
+    .habit-control .section__column:nth-of-type(2) {
+        margin: 8vw 0 0;
+    }
 }
 
 .habit-control .calendar {
@@ -714,12 +668,11 @@ button {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 60px;
+    position: relative;
 }
 
 .habit-control .calendar__title {
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'BebasNeue-Bold';
     font-size: 35px;
     line-height: 25px;
     text-align: center;
@@ -752,10 +705,12 @@ button {
     text-align: center;
     grid-gap: 30px;
     margin-bottom: 40px;
+    list-style: none;
+    padding: 0;
 }
 
 .habit-control .calendar__weeks__item {
-    font-family: Bebas Neue;
+    font-family: 'BebasNeue-Regular';
     font-style: normal;
     font-weight: normal;
     font-size: 35px;
@@ -772,6 +727,8 @@ button {
     text-align: center;
     justify-items: center;
     grid-gap: 30px;
+    list-style: none;
+    padding: 0;
 }
 
 .habit-control .calendar__days__item {
@@ -843,7 +800,7 @@ button {
     background: #00a662;
     border-radius: 10px;
     color: #fff;
-    font-family: Bebas Neue;
+    font-family: 'BebasNeue-Bold';
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -890,6 +847,7 @@ button {
     background: rgba(22, 74, 74, .3);
     border-radius: 10px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .habit-control__info__item {
@@ -902,9 +860,7 @@ button {
 }
 
 .habit-control__info__title {
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'BebasNeue-Bold';
     font-size: 35px;
     color: #fff;
     text-align: left;
@@ -912,20 +868,18 @@ button {
 }
 
 .habit-control__info__param {
-    font-family: Quicksand;
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: 300;
     font-size: 25px;
     line-height: 29px;
     display: flex;
     align-items: center;
-    color: rgba(0, 1, 0, );
+    color: hsla(0, 0%, 100%, .5);
 }
 
 .habit-control__info__value {
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'BebasNeue-Bold';
     font-size: 25px;
     letter-spacing: 0.02em;
     color: #00a662;
@@ -939,9 +893,7 @@ button {
 }
 
 .habit-control__footer__title {
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'BebasNeue-Bold';
     font-size: 30px;
     line-height: 30px;
     color: rgba(255, 255, 255, .5);
@@ -949,6 +901,10 @@ button {
     margin-bottom: 22px;
     position: absolute;
     top: -40px;
+}
+
+ul {
+    padding: 0;
 }
 
 .habit-control__footer__bottom {
@@ -960,9 +916,7 @@ button {
 }
 
 .habit-control__footer__bottom .day-title {
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'BebasNeue-Bold';
     font-size: 30px;
     width: 20%;
 }
@@ -980,12 +934,12 @@ button {
 }
 
 .habit-control__footer__bottom .times__title {
-    font-family: Quicksand;
+    font-family: 'Quicksand';
     font-style: normal;
     font-weight: 300;
     font-size: 25px;
     line-height: 29px;
-    color: rgba(0, 1, 0, );
+    color: hsla(0, 0%, 100%, .5);
 }
 
 .habit-control__footer__bottom .times__status {
@@ -1009,7 +963,7 @@ button {
 }
 
 .habit-buttons {
-    margin-top: 50px;
+    margin: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1055,10 +1009,11 @@ button {
     color: white;
     position: relative;
 }
-#slide1>.b
-{
+
+#slide1 > .b {
     display: none;
 }
+
 .habit-page:before,
 .habits-page:before {
     position: absolute;
@@ -1081,11 +1036,283 @@ button {
     .habits-page .time-boxes {
         overflow-x: scroll;
     }
-/*
+}
 
-    .progress-bar {
-        margin: 0 auto 0 7vw;
-        width: 85%;
+.chooser-page {
+    background: #0a0952;
+    background-image: url('../dashboard-master/app/assets/images/bg/chooser-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-family: 'BebasNeue-Bold';
+    position: absolute;
+    top: -100%;
+    z-index: 10;
+    transition: all .3s;
+}
+
+.chooser-page .header,
+.chooser-page .header__column {
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.chooser-page .header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.chooser-page .header__page-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin: 0;
+    font-family: 'BebasNeue-Bold';
+}
+
+.chooser-page .header__column:nth-of-type(3) {
+    justify-self: flex-end;
+}
+
+.chooser__users {
+    position: relative;
+    /*    top: 30vh;*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center;
+    grid-row-gap: 30px;
+}
+
+.chooser__users .avatar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.chooser__users .avatar__img {
+    height: 200px;
+    width: 200px;
+}
+
+.avatar_selected .avatar__img:before {
+    content: "";
+    background: rgba(19, 34, 67, .7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.avatar__img img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.avatar_selected .avatar__img:after {
+    content: "";
+    background: url('../dashboard-master/app/assets/images/icons/done-white.svg');
+    background-size: cover;
+    width: 65px;
+    height: 50px;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    z-index: 2;
+}
+
+.avatar__name {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    display: inline-block;
+    margin: 5px auto 0;
+}
+
+.chooser__users .avatar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.chooser__users .avatar__img {
+    height: 200px;
+    width: 200px;
+}
+
+.avatar__img {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border: 3px solid #ffff;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.chooser__footer {
+    /*    position: absolute;*/
+    width: 100vw;
+    height: 135px;
+    background: url('../dashboard-master/app/assets/images/chooser-footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chooser__footer__btn {
+    width: 93px;
+    height: 93px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.chooser__footer__btn span {
+    display: inline-block;
+    background: #424f6d;
+    width: 35px;
+    height: 5px;
+    position: absolute;
+}
+
+.chooser__footer__btn span:last-of-type {
+    height: 35px;
+    width: 5px;
+}
+
+chooser__footer__btn {
+    width: 93px;
+    height: 93px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+    .chooser__users {
+        grid-template-columns: 1fr 1fr;
+        top: 5vh;
     }
-*/
+
+    .chooser-page .header__column:nth-of-type(3) {
+        display: none;
+    }
+
+    .chooser__users .avatar__img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .avatar__name {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 93px;
+    }
+
+    .avatar_selected .avatar__img:after {
+        content: "";
+        background: url('../dashboard-master/app/assets/images/icons/done-white.svg');
+        background-size: cover;
+        width: 130px;
+        height: 100px;
+        position: absolute;
+        top: 35%;
+        left: 30%;
+        z-index: 2;
+    }
+
+    .chooser-page .header__page-title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 120px;
+        line-height: 120px;
+        text-align: center;
+    }
+
+    .prev-btn {
+        width: 32px;
+        height: 64px;
+    }
+
+    .chooser__footer {
+        height: 100px;
+        width: 100vw;
+        height: 225px;
+        bottom: 0;
+        background: url('../dashboard-master/app/assets/images/chooser-footer-mobile.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .chooser__footer__btn {
+        width: 186px;
+        height: 186px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+    }
+
+    .chooser__footer__btn span {
+        display: inline-block;
+        width: 70px;
+        height: 10px;
+        position: absolute;
+    }
+
+    .chooser__footer__btn span:last-of-type {
+        height: 70px;
+        width: 10px;
+    }
+
+    .chooser-page .header {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        padding-left: 77px;
+    }
 }

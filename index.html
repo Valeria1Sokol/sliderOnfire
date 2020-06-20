@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+<!--xmlns="http://www.w3.org/1999/xhtml"-->
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>OnFire Presentation</title>
-    <meta name="author" content="Alvaro Trigo Lopez" />
+    <!--    <meta name="author" content="Alvaro Trigo Lopez" />-->
     <meta name="description" content="fullPage demo scrolling speed." />
     <meta name="keywords" content="fullpage,jquery,demo,scrolling,speed,scrollingSpeed" />
     <meta name="Resource-type" content="Document" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;515;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!--    style and script 1+2 slide-->
 
     <link rel="stylesheet" href="twoscreensvdots/css/style.css">
@@ -28,12 +30,10 @@
     <!--*******-->
 
 
-    <!--   style and script 5th slide location-->
+    <!--   style and script 5th, fase fitnes, choose user slide location-->
     <link rel="icon" href="dashboard-master/app/assets/images/favicon.ico">
-    <!-- styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;515;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/5pagestyle.css">
+
 
     <!--    *******-->
 
@@ -81,7 +81,7 @@
                                 </div>
                             </div>
                             <div class="profile__menu">
-                                <div class="profile__image">
+                                <div class="profile__image userChooseClick">
                                     <img src="twoscreensvdots/img/profile1.png" alt="profile">
                                 </div>
                                 <div class="menu__time">
@@ -473,7 +473,7 @@
                                 </div>
                             </div>
                             <div class="profile__menu">
-                                <div class="profile__image">
+                                <div class="profile__image userChooseClick">
                                     <img src="twoscreensvdots/img/profile1.png" alt="profile">
                                 </div>
                                 <div class="menu__time">
@@ -762,7 +762,7 @@
                                         </div>
                                         <div class="userBox">
                                             <div class="time">11:34</div>
-                                            <div class="user"></div>
+                                            <div class="user userChooseClick"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -849,7 +849,7 @@
                                             </div>
                                             <div class="userBox">
                                                 <div class="time">11:34</div>
-                                                <div class="user"></div>
+                                                <div class="user userChooseClick"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -997,7 +997,7 @@
                             </div>
 
                             <div class="header__column header_clock-bottom">
-                                <div class="avatar">
+                                <div class="avatar userChooseClick">
                                     <div class="avatar__img avatar_bordered">
                                         <img src="dashboard-master/app/assets/images/avatars/4.png" alt="Avatar">
                                     </div>
@@ -1367,6 +1367,175 @@
                         </ul>
                     </div>
                 </div>
+                <div class="intro habit-page">
+                    <div class="src">
+                        <header class="header">
+                            <div class="header__column">
+                                <div class="prev-btn"></div>
+                            </div>
+                            <div class="header__column">
+                                <div class="header__menu-btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                            </div>
+                            <div class="header__column">
+                                <h1 class="header__page-title">Face fitness</h1>
+                            </div>
+
+
+                            <div class="header__column header_clock-bottom">
+                                <div class="avatar userChooseClick">
+                                    <div class="avatar__img avatar_bordered">
+                                        <img src="dashboard-master/app/assets/images/avatars/4.png" alt="Avatar">
+                                    </div>
+                                </div>
+                                <div class="clock">
+                                    <span>15:34</span>
+                                </div>
+                            </div>
+                        </header>
+
+                        <div class="progress-bar">
+                            <div class="progress-bar__numbers">
+                                <span class="progress-bar__stages">7/15</span>
+                                <span class="progress-bar__percent">48%</span>
+                            </div>
+                            <div class="progress-bar__line"></div>
+                            <span class="progress-bar__title">weekly progress</span>
+                        </div>
+
+                        <section class="habit-control">
+                            <div class="section__column">
+                                <div class="calendar">
+                                    <div class="calendar__header">
+                                        <button class="calendar__btn calendar__btn-prev">
+                                            <img src="dashboard-master/app/assets/images/icons/arrow-green.svg">
+                                        </button>
+                                        <h3 class="calendar__title">July, 2020</h3>
+                                        <button class="calendar__btn calendar__btn-next">
+                                            <img src="dashboard-master/app/assets/images/icons/arrow-green.svg">
+                                        </button>
+                                    </div>
+                                    <ul class="calendar__weeks">
+                                        <li class="calendar__weeks__item">Mon</li>
+                                        <li class="calendar__weeks__item calendar__weeks__item_active">Tue</li>
+                                        <li class="calendar__weeks__item">Wed</li>
+                                        <li class="calendar__weeks__item">Thu</li>
+                                        <li class="calendar__weeks__item">Fri</li>
+                                        <li class="calendar__weeks__item">Sat</li>
+                                        <li class="calendar__weeks__item">Sun</li>
+                                    </ul>
+                                    <ul class="calendar__days">
+                                        <li class="calendar__days__item calendar__days_done"></li>
+                                        <li class="calendar__days__item calendar__days_done"></li>
+                                        <li class="calendar__days__item calendar__days_done"></li>
+                                        <li class="calendar__days__item calendar__days_fail"></li>
+                                        <li class="calendar__days__item calendar__days_done"></li>
+                                        <li class="calendar__days__item calendar__days_off"></li>
+                                        <li class="calendar__days__item calendar__days_off"></li>
+
+                                        <li class="calendar__days__item calendar__days_done"></li>
+                                        <li class="calendar__days__item calendar__days_done"></li>
+                                        <li class="calendar__days__item calendar__days_done"></li>
+                                        <li class="calendar__days__item calendar__days_fail"></li>
+                                        <li class="calendar__days__item calendar__days_done"></li>
+                                        <li class="calendar__days__item calendar__days_off"></li>
+
+                                        <li class="calendar__days__item calendar__days_off"></li>
+                                        <li class="calendar__days__item calendar__days_current">21</li>
+                                        <li class="calendar__days__item calendar__days_done"></li>
+                                        <li class="calendar__days__item calendar__days_done"></li>
+                                        <li class="calendar__days__item calendar__days_fail"></li>
+                                        <li class="calendar__days__item calendar__days_done"></li>
+                                        <li class="calendar__days__item calendar__days_off"></li>
+                                        <li class="calendar__days__item calendar__days_off"></li>
+
+                                        <li class="calendar__days__item"></li>
+                                        <li class="calendar__days__item"></li>
+                                        <li class="calendar__days__item"></li>
+                                        <li class="calendar__days__item"></li>
+                                        <li class="calendar__days__item"></li>
+                                        <li class="calendar__days__item calendar__days_off"></li>
+                                        <li class="calendar__days__item calendar__days_off"></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="section__column">
+                                <div class="habit-control__info">
+                                    <h3 class="habit-control__info__title">
+                                        Info:
+                                    </h3>
+                                    <ul>
+                                        <li class="habit-control__info__item">
+                                            <span class="habit-control__info__param">
+                                                Repetition pattern:
+                                            </span>
+
+                                            <span class="habit-control__info__value">
+                                                M T W Th F
+                                            </span>
+                                        </li>
+                                        <li class="habit-control__info__item">
+                                            <span class="habit-control__info__param">
+                                                Repetition goal:
+                                            </span>
+                                            <span class="habit-control__info__value">
+                                                28
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="habit-video-popup">
+                                    <div class="habit-control__video-box">
+                                        <video id="video-player" width="630" height="350" controls="controls" poster="https://img.youtube.com/vi/gLDiQFYZC6o/maxresdefault.jpg">
+                                            <source src="https://www.youtube.com/embed/gLDiQFYZC6o?" type='video/mp4;'>
+                                        </video>
+                                        -->
+                                    </div>
+                                </div>
+                                <div class="habit-control__video-box">
+                                    <video id="video-player" width="630" height="350" controls="controls" poster="https://img.youtube.com/vi/gLDiQFYZC6o/maxresdefault.jpg">
+                                        <source src="https://www.youtube.com/embed/gLDiQFYZC6o?" type='video/mp4;'>
+                                    </video>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="habit-control__footer">
+                            <div class="habit-control__footer__title">
+                                TODAY
+                            </div>
+                            <div class="habit-control__footer__bottom">
+                                <div class="day-title">
+                                    July 27, Tuesday
+                                </div>
+                                <ul class="times">
+                                    <li class="times__item">
+                                        <span class="times__title">Morning</span>
+                                        <div class="times__status times__status_done"></div>
+                                    </li>
+                                    <li class="times__item">
+                                        <span class="times__title">Aftermoon</span>
+                                        <div class="times__status times__status_done"></div>
+                                    </li>
+                                    <li class="times__item">
+                                        <span class="times__title">Evening</span>
+                                        <div class="times__status times__status_progress"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="habit-buttons">
+                            <a href="#" class="btn btn-outline js-start-lesson" data-time="51000">Start</a>
+                            <a href="#" class="btn btn-green js-complete-lesson">complete</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="slide" id="slide6">
                 <div class="intro">
@@ -1559,6 +1728,67 @@
         </div>
 
     </div>
+    <div class="chooser-page">
+        <header class="header">
+            <div class="header__column">
+                <div class="prev-btn"></div>
+            </div>
+
+            <div class="header__column">
+                <h1 class="header__page-title">CHOOSE USER</h1>
+            </div>
+
+            <div class="header__column header_clock-bottom">
+                <div class="clock">
+                    <span>15:34</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="chooser__users">
+            <div class="avatar avatar_selected">
+                <div class="avatar__img">
+                    <img src="dashboard-master/app/assets/images/avatars/4.png" alt="Avatar">
+                </div>
+                <span class="avatar__name">
+                    John
+                </span>
+            </div>
+            <div class="avatar">
+                <div class="avatar__img">
+                    <img src="dashboard-master/app/assets/images/avatars/1.png" alt="Avatar">
+                </div>
+                <span class="avatar__name">
+                    Eli
+                </span>
+            </div>
+            <div class="avatar">
+                <div class="avatar__img">
+                    <img src="dashboard-master/app/assets/images/avatars/2.png" alt="Avatar">
+                </div>
+                <span class="avatar__name">
+                    Josy
+                </span>
+            </div>
+            <div class="avatar">
+                <div class="avatar__img">
+                    <img src="dashboard-master/app/assets/images/avatars/3.png" alt="Avatar">
+                </div>
+                <span class="avatar__name">
+                    Brad
+                </span>
+            </div>
+
+        </section>
+
+
+        <div class="chooser__footer">
+            <div class="chooser__footer__btn">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="js/scrolloverflow.js"></script>
     <script type="text/javascript" src="js/fullpage.js"></script>
@@ -1590,22 +1820,23 @@
                 autoScrolling: false,
                 controlArrows: false
             });
-
         });
-
     </script>
 
-
-
     <script>
-        //        $('.profile__image').click(function() {
-        //            $('#slide1 .src').css({
-        //                display: 'none'
-        //            })
-        //            $('#slide1>.b').css({
-        //                display: 'block'
-        //            })
-        //        })
+        $('.header__page-title').click(function() {
+            $('#slide5 .habits-page').css({
+                display: 'none'
+            })
+            $('#slide5 .habit-page').css({
+                display: 'block'
+            })
+        })
+        $('.userChooseClick').click(function() {
+            $('.chooser-page').css({
+                top: '0'
+            })
+        })
 
     </script>
 </body>

@@ -1056,7 +1056,7 @@ section {
         color: #091637;
         font-size: 40px;
         display: inline-block;
-        position: fixed;
+        position: absolute;
         top: 28px;
         right: 58px;
         font-family: 'BebasNeue Bold';
