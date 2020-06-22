@@ -52,7 +52,8 @@
 </head>
 
 <body>
-
+    <div class="stopTrack"></div>
+    <div class="playTrack"></div>
 
     <div id="fullpage">
         <div class="section" id="section1">
@@ -1745,7 +1746,7 @@
             </div>
         </header>
 
-        <section class="chooser__users">
+        <section class="chooser__users" id="stopSlider">
             <div class="avatar avatar_selected">
                 <div class="avatar__img">
                     <img src="dashboard-master/app/assets/images/avatars/4.png" alt="Avatar">
@@ -1781,7 +1782,6 @@
 
         </section>
 
-
         <div class="chooser__footer">
             <div class="chooser__footer__btn">
                 <span></span>
@@ -1808,19 +1808,20 @@
         $(document).ready(function() {
 
             $('#fullpage').fullpage({
-                //                dragAndMove: true,
                 loopBottom: true,
                 afterRender: function() {
-                    setInterval(function() {
+                    idInterval = setInterval(function() {
                         $.fn.fullpage.moveSlideRight();
                     }, 10000);
                 },
                 scrollOverflow: false,
                 slidesNavigation: true,
                 autoScrolling: false,
-                controlArrows: false
+                controlArrows: false,
+
             });
         });
+
     </script>
 
     <script>
@@ -1836,12 +1837,40 @@
             $('.chooser-page').css({
                 top: '0'
             })
+
         })
         $('.avatar').click(function() {
             $('.chooser-page').css({
                 top: '-100%'
-            })
+            });
         })
+        $('.stopTrack').click(function() {
+
+
+
+        })
+
+        $(".playTrack").on('click', function() {
+            idInterval = setInterval(function() {
+                $.fn.fullpage.moveSlideRight();
+            }, 10000);
+            $(".playTrack").css({
+                display: 'none'
+            });
+            $(".stopTrack").css({
+                display: 'block'
+            })
+        });
+        $(".stopTrack").on('click', function(e) {
+            e.preventDefault();
+            clearInterval(idInterval);
+            $(".stopTrack").css({
+                display: 'none'
+            });
+            $(".playTrack").css({
+                display: 'block'
+            })
+        });
 
     </script>
 </body>

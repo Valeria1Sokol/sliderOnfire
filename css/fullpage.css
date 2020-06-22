@@ -14,9 +14,35 @@
     overflow-y: scroll !important;
     height: 100vh;
 }
-.userChooseClick
-{
+
+.userChooseClick {
     cursor: pointer;
+}
+
+.stopTrack {
+    position: fixed;
+    top: 1%;
+    left: 2%;
+    width: 3vw;
+    height: 3vw;
+    background-image: url(../pause.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+.playTrack {
+    position: fixed;
+    top: 1%;
+    left: 2%;
+    width: 3vw;
+    height: 3vw;
+    background-image: url(../play.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+    display: none;
 }
 
 html.fp-enabled,

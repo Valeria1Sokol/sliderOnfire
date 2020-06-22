@@ -387,9 +387,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-top: 30px;
-    padding-right: 90px;
+    padding: 3.34vw 2.7vw 0;
     width: 100%;
 }
 
